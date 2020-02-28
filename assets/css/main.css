@@ -222,6 +222,21 @@ a.btn-mod {
   }
 }
 
+/* contactme landing page */
+
+.contactme a {
+  display: inline-block;
+  width: 55px;
+  height: 45px;
+  border-radius: 2px;
+  font-size: 30px;
+  color: #181818;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  margin: 10px;
+}
+
 
 /* Footer */
 
@@ -232,7 +247,6 @@ footer {
   width: 100%;
   text-align: left;
   font: normal 16px sans-serif;
-
   padding: 45px 50px;
 }
 
@@ -276,12 +290,10 @@ footer .footer-right a {
   height: 35px;
   background-color: #33383b;
   border-radius: 2px;
-
   font-size: 20px;
   color: #ffffff;
   text-align: center;
   line-height: 35px;
-
   margin-left: 3px;
 }
 
