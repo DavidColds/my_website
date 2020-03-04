@@ -5,107 +5,236 @@ html {
   scroll-behavior: smooth;
 }
 
-.fixed-top {
-  background-color: #ff000000;
-  transition: all .5s ease-in-out;
-  font-size: 20px;
-  color: #ffffff;
-
-}
-
-.fixed-top.scrolled {
-  background-color: #e9e9e9 !important;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all .5s ease-in-out;
-  font-size: 20px;
-  color: #ffffff;
-
-}
+/******************************************* Landing page**/
 
 #home {
   height: 100vh;
   min-height: 500px;
   background: url(../images/cover.jpg);
-	background-color: #222;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-	-webkit-background-size: cover;
+  background-color: #222;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-	background-size: cover;
-	padding: 0;
+  background-size: cover;
+  padding: 0;
 }
 
-home-overlay {
-  background-color: rgba(255, 255, 255, 0.3);
-  background-image: url("../images/pattern.png");
-  background-repeat: repeat;
-  height: 100%;
-  left: 0;
+
+/******************************************* Nav with parallax**/
+.background {
+  height: 100vh;
+  min-height: 500px;
+  background: url(../images/cover.jpg);
+  background-color: #222;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 0;
+}
+.header .content {
   position: absolute;
   top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.header h1, header h2 {
+  margin: 0;
+}
+.header h2 {
+  text-transform: uppercase;
+  margin-top: -.5em;
+}
+
+.site {
+  text-align: center;
+  background-color: #efefef;
+  font-size: .8em;
+  color: #444;
+  position:relative
+}
+.site a {
+  color: #666;
+  text-decoration: none;
+}
+.site a:hover {
+  color: #222;
+}
+
+.site nav{
+  position: absolute;
+  top:0;
+  left:0;
+  background:#222;
+  width:100%;
+  z-index: 300;
+}
+.site nav a{
+  padding:10px 30px;
+  font-size:1.3em;
+  display:inline-block
+}
+.site nav a:hover{
+  background:#333;
+  color:#fff
+}
+
+
+/******************************************* end Nav with parallax**/
+
+/******************************************* Scroll BTN **/
+
+
+.scroll-down {
+  opacity: 1;
+  -webkit-transition: all .5s ease-in 3s;
+  transition: all .5s ease-in 3s;
+}
+
+.scroll-down p {
+  font-size: 30px;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -16px;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 2px solid rgb(0, 0, 0);
+  background-size: 14px auto;
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+  transform: scale(1)
+}
+
+.scroll-down:before {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 6px);
+    transform: rotate(-45deg);
+    display: block;
+    width: 12px;
+    height: 12px;
+    content: "";
+    border: 2px solid rgb(0, 0, 0);
+    border-width: 0px 0 2px 2px;
+}
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+
+.scroll-down-text{
+  font-family: Raleway, "Times New Roman", Times, sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  position: absolute;
   width: 100%;
-  z-index: 0;
-}
-
-
-.pfblock-image {
-	padding: 0;
-}
-
-.calltoaction h1,
-.calltoaction h2,
-.calltoaction h3,
-.calltoaction h4,
-.calltoaction h5,
-.calltoaction h6,
-.pfblock-image,
-.pfblock-image h1,
-.pfblock-image h2,
-.pfblock-image h3,
-.pfblock-image h4,
-.pfblock-image h5,
-.pfblock-image h6 {
-	color: #fff;
-}
-
-
-.intro {
-	position: absolute;
-	width: 100%;
-	top: 50%;
-	left: 0;
-	text-align: center;
-	-webkit-transform: translate(0%, -50%);
-	-moz-transform: translate(0%, -50%);
+  top: 88%;
+  left: 0;
+  text-align: center;
+  -webkit-transform: translate(0%, -50%);
+  -moz-transform: translate(0%, -50%);
   -ms-transform: translate(0%, -50%);
   -o-transform: translate(0%, -50%);
   transform: translate(0%, -50%);
-	padding: 0 15px;
+  padding: 0 15px;
 }
 
-.intro h1{
-    font-weight: 900;
+
+
+/******************************************* End Scroll BTN **/
+
+
+
+/* about */
+#about {
+  font-size: 25px;
+  color: #8f9296;
+}
+
+/* hr */
+
+hr {
+  width: 60%;
+  background: #fff;
+  margin: 20px auto;
+  box-shadow: 0.5px 0.5px 1px rgba(0, 0, 0);
+}
+
+/* intro */
+
+.intro {
+  position: absolute;
+  width: 100%;
+  top: 35%;
+  left: 0;
+  text-align: center;
+  -webkit-transform: translate(0%, -50%);
+  -moz-transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+  -o-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+  padding: 0 15px;
+}
+
+.intro h3 {
+  font-weight: 800;
 }
 
 .start {
-	font-family: Raleway, "Times New Roman", Times, sans-serif;
-	font-size: 76px;
-	font-style: normal;
-	text-transform: none;
+  font-family: Raleway, "Times New Roman", Times, sans-serif;
+  font-size: 76px;
+  font-style: normal;
+  text-transform: none;
   margin: 0px 0;
   letter-spacing: 11px;
 }
 
-
-
-
-
-
 /* Card */
 
+.align-items-center {
+  -ms-flex-align: center !important;
+  align-items: center !important;
+}
 
+.d-flex {
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
 
 
 .card {
@@ -118,14 +247,16 @@ home-overlay {
   width: auto;
 }
 
-.card-1 {
+#card {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 }
 
-.card-1:hover {
+#card:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
+
+
 
 /* Contact */
 #success-message {
@@ -300,7 +431,6 @@ footer .footer-right a {
   margin-left: 3px;
 }
 
-/* If you don't want the footer to be responsive, remove these media queries */
 
 @media (max-width: 600px) {
 
@@ -319,14 +449,5 @@ footer .footer-right a {
   }
 }
 
-/* ------- Demo adds. Please ignore and remove ------- */
 
-#bsaHolder {
-  top: 100px !important;
-}
 
-@media (max-width: 1200px) {
-  #bsaHolder {
-    display: none;
-  }
-}
