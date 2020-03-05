@@ -86,7 +86,7 @@ header h2 {
 
 .site nav a {
   padding: 10px 30px;
-  font-size: 1.3em;
+  font-size: 1.7em;
   display: inline-block
 }
 
@@ -238,6 +238,18 @@ hr {
 
 /******************************************* End Intro text on the background **/
 
+/******************************************* Projects collumn **/
+
+
+#projects 
+.form-title {
+  padding-top: 100px;
+}
+
+
+
+/******************************************* end Projects collumn **/
+
 
 /******************************************* Project card **/
 
@@ -303,7 +315,7 @@ hr {
 }
 
 .form-title {
-  padding: 25px;
+  padding: 45px;
   font-size: 30px;
   font-weight: 300;
   font-family: 'Raleway', sans-serif;
