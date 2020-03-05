@@ -197,6 +197,17 @@ header h2 {
   color: #8f9296;
 }
 
+/* projects text */
+#projects {
+  color: #8f9296;
+
+}
+/*end projects text*/
+.feature-content {
+  padding: 8rem 0;
+  overflow: hidden;
+}
+
 /* hr */
 
 hr {
@@ -241,10 +252,7 @@ hr {
 /******************************************* Projects collumn **/
 
 
-#projects 
-.form-title {
-  padding-top: 100px;
-}
+
 
 
 
