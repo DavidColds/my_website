@@ -421,7 +421,29 @@ hr {
 /******************************************* End Contact  **/
 
 
+/******************************************* End Page section show  **/
 
+
+
+.page-section {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  height: 100vh;
+  animation: all 0.5s ease;
+  flex-direction: column-reverse;
+  justify-content: center;
+}
+
+.technologies {
+  margin-top: 25px;
+  font-size: 1.9em;
+  flex-wrap: wrap;
+}
+
+
+/******************************************* End Page section show  **/
 
 /******************************************* Footer  **/
 
