@@ -78,9 +78,6 @@ $('#add-content').click(function (e) {
 
 
 
-
-
-  //Based on the Scroller function from @sallar
 var $content = $('header .content')
 , $blur    = $('header .overlay')
 , wHeight  = $(window).height();
@@ -164,4 +161,6 @@ $(function() {
     return false;
   });
 });
+
+
   
