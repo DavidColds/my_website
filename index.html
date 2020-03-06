@@ -75,17 +75,19 @@
 </header>
 <section class="site">
     <nav>
+        
         <a class="nav-item nav-link" href="#up">Home</a>
         <a class="nav-item nav-link" href="#projects">Projects</a>
         <a class="nav-item nav-link" href="#about">About </a>
         <a class="nav-item nav-link" href="#contact">Contact </a>
         <a class="nav-item nav-link" href="#technologies">Technologies </a>
-
     </nav>
 </section>
 
+
 <!-- About me section -->
-<section id="about">
+<section data-aos="fade-down"
+data-aos-anchor-placement="bottom-bottom" id="about">
     <div class="container">
         <div class="feature-content">
             <div class="row">
@@ -264,20 +266,20 @@
 <hr>
 
 
-
-<div class="container">
+<div data-aos="zoom-out-up"
+class="container">
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
             <h2 class="form-title">Get in Touch</h2>
         </div>
     </div>
 
-    <div id='contact' class="item" data-aos="zoom-in">
+    <div id='contact' class="item">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <div class="info">
-                        <div  data-aos="zoom-in-down" class="col-lg-8 offset-lg-2">
+                        <div  class="col-lg-8 offset-lg-2">
                             <p class="lead"> Hire Me </p>
                             <p>So are you looking for a professional, communicative & punctual software engineer with
                                 extensive web development skills?
@@ -293,25 +295,25 @@
                     <form id="contact-form" name="myForm" class="form" action="#" onsubmit="return validateForm()"
                         method="POST" role="form">
 
-                        <div data-aos="zoom-out" class="form-group">
+                        <div class="form-group">
                             <label class="form-label" id="nameLabel" for="name"></label>
                             <input type="text" class="form-control" id="name" name="name" placeholder="Your name"
                                 tabindex="1">
                         </div>
 
-                        <div data-aos="zoom-out-up" class="form-group">
+                        <div class="form-group">
                             <label class="form-label" id="emailLabel" for="email"></label>
                             <input type="email" class="form-control" id="email" name="email" placeholder="Your Email"
                                 tabindex="2">
                         </div>
 
-                        <div data-aos="zoom-in" class="form-group">
+                        <div class="form-group">
                             <label class="form-label" id="subjectLabel" for="sublect"></label>
                             <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject"
                                 tabindex="3">
                         </div>
 
-                        <div data-aos="flip-up" class="form-group">
+                        <div class="form-group">
                             <label class="form-label" id="messageLabel" for="message"></label>
                             <textarea rows="6" cols="60" name="message" class="form-control" id="message"
                                 placeholder="Your message" tabindex="4"></textarea>
@@ -328,12 +330,12 @@
 </div>
 
 
+
 <br>
 
 
 
-
-<div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="200" data-aos-offset="0">
+<div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100" data-aos-offset="0">
     <footer>
         <div class="footer-limiter">
             <div class="footer-right">
@@ -344,7 +346,6 @@
             </div>
 
             <div class="footer-left">
-
 
                 <p class="footer-links">My Website</p>
 
@@ -371,11 +372,9 @@
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-
 <script>
     AOS.init();
 </script>
 
 </body>
-
 </html>
