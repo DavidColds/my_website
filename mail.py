@@ -21,7 +21,7 @@ msg.add_alternative("""\
 <!DOCTYPE html>
 <html>
     <body>
-        <h1 style="color:SlateGray;">This is an HTML Email!</h1>
+        <h1 style="color:SlateGray;">HEJ</h1>
     </body>
 </html>
 """, subtype='html')
