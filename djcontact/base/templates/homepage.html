@@ -1,16 +1,18 @@
-{% load staticfiles %}
+{% load static %}
 
 <!doctype html>
 <html lang="en">
 
 
 <head>
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
+    <link rel="stylesheet" href="{% static 'base/main.css' %}" type="text/css">
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
@@ -30,7 +32,7 @@
 
 
     <!-- Main CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}" type="text/css">
     <title>MyWebsite</title>
 </head>
 
@@ -132,7 +134,7 @@ data-aos-anchor-placement="bottom-bottom" id="about">
                 <div id='card' class="row">
                     <div class="col-md-6">
                         <div>
-                            <img class="img-fluid" src="assets/images/Travel.jpg" />
+                            <img class="img-fluid" src="" />
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-5 ml-auto d-flex align-items-center mt-4 mt-md-0">
@@ -370,7 +372,7 @@ class="container">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
 </script>
-<script type="text/javascript" src="assets/js/main.js"></script>
+<script type="text/javascript" href="{% static 'js/main.js' %}"></script>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
