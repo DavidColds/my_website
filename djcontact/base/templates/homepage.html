@@ -11,7 +11,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-
+    
+    <!-- Main CSS -->
     <link rel="stylesheet" href="{% static 'base/main.css' %}" type="text/css">
 
     <!-- Google Font -->
@@ -31,8 +32,6 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
-    <!-- Main CSS -->
-  <link rel="stylesheet" href="{% static 'css/styles.css' %}" type="text/css">
     <title>MyWebsite</title>
 </head>
 
@@ -67,7 +66,7 @@
     </section>
 </div>
 <header>
-    <div class="background">
+    <div id="background">
         <section>
 
             <a href="#about" class="scroll-down" address="true">
@@ -77,6 +76,7 @@
     </div>
     <div class="overlay"></div>
 </header>
+
 <section class="site">
     <nav>
         
@@ -372,13 +372,16 @@ class="container">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
 </script>
-<script type="text/javascript" href="{% static 'js/main.js' %}"></script>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+
 <script>
     AOS.init();
+    
 </script>
+
+<script type="text/javascript" src="{% static 'js/main.js'%}"></script>
 
 </body>
 </html>
