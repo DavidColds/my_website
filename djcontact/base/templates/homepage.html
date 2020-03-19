@@ -1,5 +1,8 @@
 {% load static %}
 
+{% load bootstrap4 %}
+
+
 <!doctype html>
 <html lang="en">
 
@@ -10,8 +13,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    
+    <link rel="stylesheet"
+        href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
     <!-- Main CSS -->
     <link rel="stylesheet" href="{% static 'base/main.css' %}" type="text/css">
 
@@ -37,359 +41,334 @@
 
 <body>
 
-<!-- Parallax landing with nav -->
+    <!-- Parallax landing with nav -->
 
 
-<div id="up" class="parallax">
-    <section class="pfblock-image screen-height">
-        <div class="intro" style="overflow-x: hidden">
+    <div id="up" class="parallax">
+        <section class="pfblock-image screen-height">
+            <div class="intro" style="overflow-x: hidden">
 
-            <div class="start" style="color:black;" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
-                data-aos-delay="100">HI!</div>
+                <div class="start" style="color:black;" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+                    data-aos-delay="100">HI!</div>
 
-            <div class="start" style="color:black;" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
-                data-aos-delay="300"> I AM DAVID</div>
+                <div class="start" style="color:black;" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+                    data-aos-delay="300"> I AM DAVID</div>
 
-            <h3 style="color:black;" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="500">
-                FULL-STACK DEVELOPER</h3>
+                <h3 style="color:black;" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="500">
+                    FULL-STACK DEVELOPER</h3>
 
-            <div class="contactme" style="overflow: hidden;" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
-                data-aos-delay="600">
+                <div class="contactme" style="overflow: hidden;" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+                    data-aos-delay="600">
 
-                <a href="https://www.linkedin.com/in/daviddrughi/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                <a href="https://github.com/DavidColds" target="_blank"><i class="fa fa-github"></i></a>
-                <a href="#contact"><i class="fa fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/daviddrughi/" target="_blank"><i
+                            class="fa fa-linkedin"></i></a>
+                    <a href="https://github.com/DavidColds" target="_blank"><i class="fa fa-github"></i></a>
+                    <a href="#contact"><i class="fa fa-envelope"></i></a>
+                </div>
             </div>
-        </div>
 
-        <div class="scroll-down-text" style="color:black;">Scroll me!</div>
-    </section>
-</div>
-<header>
-    <div id="background">
-        <section>
-
-            <a href="#about" class="scroll-down" address="true">
-            </a>
-
+            <div class="scroll-down-text" style="color:black;">Scroll me!</div>
         </section>
     </div>
-    <div class="overlay"></div>
-</header>
+    <header>
+        <div id="background">
+            <section>
 
-<section class="site">
-    <nav>
-        
-        <a class="nav-item nav-link" href="#up">Home</a>
-        <a class="nav-item nav-link" href="#projects">Projects</a>
-        <a class="nav-item nav-link" href="#about">About </a>
-        <a class="nav-item nav-link" href="#contact">Contact </a>
-        <a class="nav-item nav-link" href="#technologies">Technologies </a>
-    </nav>
-</section>
+                <a href="#about" class="scroll-down" address="true">
+                </a>
 
-
-<!-- About me section -->
-<section data-aos="fade-down"
-data-aos-anchor-placement="bottom-bottom" id="about">
-    <div class="container">
-        <div class="feature-content">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <h4>About Me</h4>
-                    <p> Hello, My name is David Drughi, and I am a Stockholm based Full-Stack Developer. I have experience
-                        with in Python, Django, Flask for Retail ecommerce and JavaScrip.
-                        I acquire vast knowledge of tools in designing and
-                        developing front-end, back-end within technologies.
-                    </p>
-                </div>
-            </div>
+            </section>
         </div>
-    </div>
-</section>
+        <div class="overlay"></div>
+    </header>
 
+    <section class="site">
+        <nav>
 
-<!--End about me section -->
-
-
-<!-- Projects -->
-
-
-<div id='projects' class="col-lg-8 offset-lg-2 text-center">
-    <h2>Projects</h2>
-    <hr>
-    <h5> Here is some of my work </h5>
-    <h5> More and better projects are on the way</h5>
-    <br>
-</div>
-</section>
-
-
-<div class="projetcs">
-    <section style="overflow-x: hidden">
-        <div data-aos="fade-left">
-            <div class="container col-md-8">
-                <div id='card' class="row">
-                    <div class="col-md-6">
-                        <div>
-                            <img class="img-fluid" src="../static/img/Travel.jpg">
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-5 ml-auto d-flex align-items-center mt-4 mt-md-0">
-                        <div>
-
-                            <h2>JavaScrip Travel WebbApp </h2>
-                            <p class="margin-top-s">Travel was created for those who want
-                                to take traveling in their own hand. With a easy to use map
-                                which can work on all devices.
-                            </p>
-                            <div class="contactme">
-                                <a href="https://github.com/DavidColds/food_app"><i class="fa fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br>
-            </div>
-        </div>
+            <a class="nav-item nav-link" href="#up">Home</a>
+            <a class="nav-item nav-link" href="#projects">Projects</a>
+            <a class="nav-item nav-link" href="#about">About </a>
+            <a class="nav-item nav-link" href="#contact">Contact </a>
+            <a class="nav-item nav-link" href="#technologies">Technologies </a>
+        </nav>
     </section>
 
 
-    <br>
-
-    <section style="overflow-x: hidden">
-        <div data-aos="fade-right">
-            <div class="container col-md-8">
-                <div id='card' class="row">
-                    <div class="col-md-6 col-lg-5 ml-auto d-flex align-items-center mt-4 mt-md-0">
-                        <div>
-                            <h2>Project 1</h2>
-                            <p class="margin-top-s"> A full-stack ecommerce site basesd around
-                                business logic used to aria-controls a centrally-owned dataset.
-                            </p>
-                        </div>
-                        <div class="contactme">
-                            <a href="https://github.com/DavidColds/food_app"><i class="fa fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div>
-                            <img alt="Web App" class="img-fluid" src="../static/img/wine.jpg" />
-                        </div>
-                    </div>
-                </div>
-                <br>
-            </div>
-        </div>
-    </section>
-
-
-    <br>
-
-    <div id="technologies"></div>
-
-    <section style="overflow-x: hidden">
-        <div data-aos="fade-left">
-            <div class="container col-md-8">
-                <div id='card' class="row">
-                    <div class="col-md-6">
-                        <div>
-                            <img alt="Web App" class="img-fluid" src="../static/img/foodapp.jpg" />
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-5 ml-auto d-flex align-items-center mt-4 mt-md-0">
-                        <div>
-                            <h2>Project 3</h2>
-                            <p class="margin-top-s"> MongoDB based Flask website.
-                                The application includes a database of recipes that can be searched and viewed by
-                                any
-                                user
-                            </p>
-                            <div class="contactme">
-                                <a href="https://github.com/DavidColds/food_app"><i class="fa fa-github"></i></a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <br>
-            </div>
-        </div>
-    </section>
-</div>
-<br>
-
-
-<section class="technologies">
-    <div class="col" style="justify-content: center;text-align: center">
-        <h3>
-            Front-End
-        </h3>
-        <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
-        data-aos-delay="100" class="technologies">
-            <i class="devicon-css3-plain"></i>
-            <i class="devicon-html5-plain"></i>
-            <i class="devicon-javascript-plain"></i>
-            <i class="devicon-bootstrap-plain"></i>
-            <i class="devicon-jquery-plain-wordmark"></i>
-            <i class="devicon-vuejs-plain-wordmark"></i>
-        </div>
-        <br>
-        <h3>
-            Back-End
-        </h3>
-        <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
-        data-aos-delay="200" class="technologies">
-            <i class="devicon-django-plain-wordmark plain"></i>
-            <i class="devicon-python-plain"></i>
-            <i class="devicon-mongodb-plain-wordmark"></i>
-            <i class="devicon-amazonwebservices-plain-wordmark"></i>
-            <i class="devicon-mysql-plain-wordmark"></i>
-        </div>
-        <br>
-        <h3>
-            Other Skills
-        </h3>
-        <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
-        data-aos-delay="500" class="technologies">
-            <i class="devicon-git-plain"></i>
-            <i class="devicon-github-plain"></i>
-            <i class="devicon-photoshop-line"></i>
-            <i class="devicon-illustrator-line"></i>
-        </div>
-    </div>
-</section>
-
-
-
-<!-- Contact  -->
-
-
-<hr>
-
-<h1>Contact Us</h1>
-<form method="post">
-    {% csrf_token %}
-    <table>
-        {{ form.as_table }}
-        </table>    
-        <div class="form-actions">
-      <button type="submit">Send</button>
-    </div>
-</form>
-
-<div data-aos="zoom-out-up"
-class="container">
-    <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-            <h2 class="form-title">Get in Touch</h2>
-        </div>
-    </div>
-
-    <div id='contact' class="item">
+    <!-- About me section -->
+    <section data-aos="fade-down" data-aos-anchor-placement="bottom-bottom" id="about">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="info">
-                        <div  class="col-lg-8 offset-lg-2">
-                            <p class="lead"> Hire Me </p>
-                            <p>So are you looking for a professional, communicative & punctual software engineer with
-                                extensive web development skills?
-                                <br>
-                                <br>
-                                If you have an application you are interested in developing, a problem that
-                                needs solving or a project that needs rescuing, I'd love to help you with it..</p>
-                        </div>
+            <div class="feature-content">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        <h4>About Me</h4>
+                        <p> Hello, My name is David Drughi, and I am a Stockholm based Full-Stack Developer. I have
+                            experience
+                            with in Python, Django, Flask for Retail ecommerce and JavaScrip.
+                            I acquire vast knowledge of tools in designing and
+                            developing front-end, back-end within technologies.
+                        </p>
                     </div>
                 </div>
-                <div class="col-md-6">
+            </div>
+        </div>
+    </section>
 
-                    <form id="contact-form" name="myForm" class="form" action="#" onsubmit="return validateForm()"
-                        method="POST" role="form">
 
-                        <div class="form-group">
-                            <label class="form-label" id="nameLabel" for="name"></label>
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Your name"
-                                tabindex="1">
+    <!--End about me section -->
+
+
+    <!-- Projects -->
+
+
+    <div id='projects' class="col-lg-8 offset-lg-2 text-center">
+        <h2>Projects</h2>
+        <hr>
+        <h5> Here is some of my work </h5>
+        <h5> More and better projects are on the way</h5>
+        <br>
+    </div>
+    </section>
+
+
+    <div class="projetcs">
+        <section style="overflow-x: hidden">
+            <div data-aos="fade-left">
+                <div class="container col-md-8">
+                    <div id='card' class="row">
+                        <div class="col-md-6">
+                            <div>
+                                <img class="img-fluid" src="../static/img/Travel.jpg">
+                            </div>
                         </div>
+                        <div class="col-md-6 col-lg-5 ml-auto d-flex align-items-center mt-4 mt-md-0">
+                            <div>
 
-                        <div class="form-group">
-                            <label class="form-label" id="emailLabel" for="email"></label>
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Your Email"
-                                tabindex="2">
+                                <h2>JavaScrip Travel WebbApp </h2>
+                                <p class="margin-top-s">Travel was created for those who want
+                                    to take traveling in their own hand. With a easy to use map
+                                    which can work on all devices.
+                                </p>
+                                <div class="contactme">
+                                    <a href="https://github.com/DavidColds/food_app"><i class="fa fa-github"></i></a>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </section>
 
-                        <div class="form-group">
-                            <label class="form-label" id="subjectLabel" for="sublect"></label>
-                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject"
-                                tabindex="3">
-                        </div>
 
-                        <div class="form-group">
-                            <label class="form-label" id="messageLabel" for="message"></label>
-                            <textarea rows="6" cols="60" name="message" class="form-control" id="message"
-                                placeholder="Your message" tabindex="4"></textarea>
-                        </div>
+        <br>
 
-                        <div class="text-center margin-top-25">
-                            <button type="submit" class="btn btn-mod btn-border btn-large">Send Message</button>
+        <section style="overflow-x: hidden">
+            <div data-aos="fade-right">
+                <div class="container col-md-8">
+                    <div id='card' class="row">
+                        <div class="col-md-6 col-lg-5 ml-auto d-flex align-items-center mt-4 mt-md-0">
+                            <div>
+                                <h2>Project 1</h2>
+                                <p class="margin-top-s"> A full-stack ecommerce site basesd around
+                                    business logic used to aria-controls a centrally-owned dataset.
+                                </p>
+                            </div>
+                            <div class="contactme">
+                                <a href="https://github.com/DavidColds/food_app"><i class="fa fa-github"></i></a>
+                            </div>
                         </div>
-                    </form>
+                        <div class="col-md-6">
+                            <div>
+                                <img alt="Web App" class="img-fluid" src="../static/img/wine.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </section>
+
+
+        <br>
+
+        <div id="technologies"></div>
+
+        <section style="overflow-x: hidden">
+            <div data-aos="fade-left">
+                <div class="container col-md-8">
+                    <div id='card' class="row">
+                        <div class="col-md-6">
+                            <div>
+                                <img alt="Web App" class="img-fluid" src="../static/img/foodapp.jpg" />
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-5 ml-auto d-flex align-items-center mt-4 mt-md-0">
+                            <div>
+                                <h2>Project 3</h2>
+                                <p class="margin-top-s"> MongoDB based Flask website.
+                                    The application includes a database of recipes that can be searched and viewed by
+                                    any
+                                    user
+                                </p>
+                                <div class="contactme">
+                                    <a href="https://github.com/DavidColds/food_app"><i class="fa fa-github"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </section>
+    </div>
+    <br>
+
+
+    <section class="technologies">
+        <div class="col" style="justify-content: center;text-align: center">
+            <h3>
+                Front-End
+            </h3>
+            <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100" class="technologies">
+                <i class="devicon-css3-plain"></i>
+                <i class="devicon-html5-plain"></i>
+                <i class="devicon-javascript-plain"></i>
+                <i class="devicon-bootstrap-plain"></i>
+                <i class="devicon-jquery-plain-wordmark"></i>
+                <i class="devicon-vuejs-plain-wordmark"></i>
+            </div>
+            <br>
+            <h3>
+                Back-End
+            </h3>
+            <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="200" class="technologies">
+                <i class="devicon-django-plain-wordmark plain"></i>
+                <i class="devicon-python-plain"></i>
+                <i class="devicon-mongodb-plain-wordmark"></i>
+                <i class="devicon-amazonwebservices-plain-wordmark"></i>
+                <i class="devicon-mysql-plain-wordmark"></i>
+            </div>
+            <br>
+            <h3>
+                Other Skills
+            </h3>
+            <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="500" class="technologies">
+                <i class="devicon-git-plain"></i>
+                <i class="devicon-github-plain"></i>
+                <i class="devicon-photoshop-line"></i>
+                <i class="devicon-illustrator-line"></i>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contact  -->
+
+
+    <hr>
+
+
+    <div data-aos="zoom-out-up" class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                <h2 class="form-title">Get in Touch</h2>
+            </div>
+        </div>
+
+        <div id='contact' class="item">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="info">
+                            <div class="col-lg-8 offset-lg-2">
+                                <p class="lead"> Hire Me </p>
+                                <p>So are you looking for a professional, communicative & punctual software engineer
+                                    with
+                                    extensive web development skills?
+                                    <br>
+                                    <br>
+                                    If you have an application you are interested in developing, a problem that
+                                    needs solving or a project that needs rescuing, I'd love to help you with it..</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                        <form id="contact-form" name="myForm" class="form" action="#" onsubmit="return validateForm()"
+                            method="POST" role="form">
+
+                            {% csrf_token %}
+                            {% bootstrap_form form %}
+
+                            <div class="form-actions">
+                                <div class="text-center margin-top-25">
+                                    <button type="submit" class="btn btn-mod btn-border btn-large">Send Message</button>
+                                </div>
+                            </div>
+
+                        </form>
+
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
 
 
-<br>
+    <br>
 
 
 
-<div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100" data-aos-offset="0">
-    <footer>
-        <div class="footer-limiter">
-            <div class="footer-right">
+    <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100" data-aos-offset="0">
+        <footer>
+            <div class="footer-limiter">
+                <div class="footer-right">
 
-                <a href="https://www.linkedin.com/in/daviddrughi/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                <a href="https://github.com/DavidColds" target="_blank"><i class="fa fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/daviddrughi/" target="_blank"><i
+                            class="fa fa-linkedin"></i></a>
+                    <a href="https://github.com/DavidColds" target="_blank"><i class="fa fa-github"></i></a>
+
+                </div>
+
+                <div class="footer-left">
+
+                    <p class="footer-links">My Website</p>
+
+                    <p>Drughi Davi © 2020</p>
+                </div>
 
             </div>
+        </footer>
+    </div>
 
-            <div class="footer-left">
+    <!-- JavaScript -->
 
-                <p class="footer-links">My Website</p>
+    <!-- jQuery -->
 
-                <p>Drughi Davi © 2020</p>
-            </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
 
-        </div>
-    </footer>
-</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
 
-<!-- JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
 
-<!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-</script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-</script>
-
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
-<script>
-    AOS.init();
-    
-</script>
+    <script>
+        AOS.init();
+    </script>
 
-<script type="text/javascript" src="{% static 'js/main.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/main.js'%}"></script>
 
 </body>
+
 </html>
