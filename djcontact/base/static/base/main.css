@@ -5,24 +5,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/******************************************* Landing page**/
-
-#home {
-  height: 100vh;
-  min-height: 500px;
-  background: url("/base/static/img/cover.jpg");
-  background-color: #222;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding: 0;
-}
-
-
 /******************************************* Nav with parallax**/
 .nav-item {
 	color: #FFF;
@@ -61,12 +43,6 @@ html {
 	opacity: 1;
 	transform: scale(1,1);
 }
-
-
-
-
-
-
 
 #background {
   height: 100vh;
@@ -137,6 +113,7 @@ header h2 {
   background: rgb(218, 218, 218);
   color: #222;
 }
+
 
 
 /******************************************* end Nav with parallax**/
@@ -334,6 +311,18 @@ hr {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
+.contactme a {
+  display: inline-block;
+  width: 55px;
+  height: 45px;
+  border-radius: 2px;
+  font-size: 30px;
+  color: #181818;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  margin: 10px;
+}
 
 
 /******************************************* End Project card **/
@@ -348,7 +337,6 @@ hr {
   padding-top: 50px;
   padding-bottom: 70px;
   }
-
   
   #success-message {
     opacity: 0;
