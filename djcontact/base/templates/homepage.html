@@ -1,17 +1,14 @@
 {% load static %}
-
 {% load bootstrap4 %}
-
 
 <!doctype html>
 <html lang="en">
-
 
 <head>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 
     <link rel="stylesheet"
         href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
@@ -131,6 +128,7 @@
 
 
     <div class="projetcs">
+
         <section style="overflow-x: hidden">
             <div data-aos="fade-left">
                 <div class="container col-md-8">
@@ -224,7 +222,7 @@
     </div>
     <br>
 
-
+<div class="container-fluid">
     <section class="technologies">
         <div class="col" style="justify-content: center;text-align: center">
             <h3>
@@ -261,6 +259,8 @@
             </div>
         </div>
     </section>
+</div>
+
 
 
 
@@ -269,47 +269,44 @@
 
     <hr>
 
-
-    <div data-aos="zoom-out-up" class="container">
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-                <h2 class="form-title">Get in Touch</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                    <h2 class="form-title">Get in Touch</h2>
+                </div>
             </div>
         </div>
 
+    <div data-aos="fade-up"
+    data-aos-anchor-placement="center-bottom" class="container-fluid">
         <div id='contact' class="item">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="info">
+                        <div  id="about">
                             <div class="col-lg-8 offset-lg-2">
-                                <p class="lead"> Hire Me </p>
-                                <p>So are you looking for a professional, communicative & punctual software engineer
-                                    with
-                                    extensive web development skills?
-                                    <br>
-                                    <br>
-                                    If you have an application you are interested in developing, a problem that
-                                    needs solving or a project that needs rescuing, I'd love to help you with it..</p>
+                                <h4>About Me</h4>
+                                <p> Hello, My name is David Drughi, and I am a Stockholm based Full-Stack Developer. I
+                                    have
+                                    experience
+                                    with in Python, Django, Flask for Retail ecommerce and JavaScrip.
+                                    I acquire vast knowledge of tools in designing and
+                                    developing front-end, back-end within technologies.
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-
+                    <div class="col-md-6 col-lg-6">
                         <form id="contact-form" name="myForm" class="form" action="#" onsubmit="return validateForm()"
                             method="POST" role="form">
-
                             {% csrf_token %}
                             {% bootstrap_form form %}
-
                             <div class="form-actions">
                                 <div class="text-center margin-top-25">
                                     <button type="submit" class="btn btn-mod btn-border btn-large">Send Message</button>
                                 </div>
                             </div>
-
                         </form>
-
                     </div>
                 </div>
             </div>
