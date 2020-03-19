@@ -96,10 +96,8 @@ data-aos-anchor-placement="bottom-bottom" id="about">
         <div class="feature-content">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
-                    <h5>About Me</h5>
-                    <h2>David</h2>
-                    <p class="lead"> Creativity is intelligence having fun.</p>
-                    <p> Hello, My name is Davi Drughi, and I am a Stockholm based Full-Stack Developer. I have experience
+                    <h4>About Me</h4>
+                    <p> Hello, My name is David Drughi, and I am a Stockholm based Full-Stack Developer. I have experience
                         with in Python, Django, Flask for Retail ecommerce and JavaScrip.
                         I acquire vast knowledge of tools in designing and
                         developing front-end, back-end within technologies.
@@ -134,7 +132,7 @@ data-aos-anchor-placement="bottom-bottom" id="about">
                 <div id='card' class="row">
                     <div class="col-md-6">
                         <div>
-                            <img class="img-fluid" src="" />
+                            <img class="img-fluid" src="../static/img/Travel.jpg">
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-5 ml-auto d-flex align-items-center mt-4 mt-md-0">
@@ -176,7 +174,7 @@ data-aos-anchor-placement="bottom-bottom" id="about">
                     </div>
                     <div class="col-md-6">
                         <div>
-                            <img alt="Web Studio" class="img-fluid" src="assets/images/wine.jpg" />
+                            <img alt="Web App" class="img-fluid" src="../static/img/wine.jpg" />
                         </div>
                     </div>
                 </div>
@@ -196,7 +194,7 @@ data-aos-anchor-placement="bottom-bottom" id="about">
                 <div id='card' class="row">
                     <div class="col-md-6">
                         <div>
-                            <img alt="Web Studio" class="img-fluid" src="assets/images/foodapp.jpg" />
+                            <img alt="Web App" class="img-fluid" src="../static/img/foodapp.jpg" />
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-5 ml-auto d-flex align-items-center mt-4 mt-md-0">
@@ -269,6 +267,16 @@ data-aos-anchor-placement="bottom-bottom" id="about">
 
 <hr>
 
+<h1>Contact Us</h1>
+<form method="post">
+    {% csrf_token %}
+    <table>
+        {{ form.as_table }}
+        </table>    
+        <div class="form-actions">
+      <button type="submit">Send</button>
+    </div>
+</form>
 
 <div data-aos="zoom-out-up"
 class="container">
