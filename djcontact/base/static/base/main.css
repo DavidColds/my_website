@@ -344,6 +344,13 @@ text-decoration:none;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
+
+
+/******************************************* End Project card **/
+
+
+
+/* start contact me */
 .contactme a {
   display: inline-block;
   width: 55px;
@@ -357,12 +364,10 @@ text-decoration:none;
   margin: 10px;
 }
 
-
-/******************************************* End Project card **/
-
-
-
-/* start contact me */
+contact-form{
+  margin: 0 auto;
+  width:80%;
+}
 #contact{
   font-family: 'Raleway', sans-serif;
   background-color: #e9e9e9;
@@ -375,9 +380,7 @@ text-decoration:none;
     opacity: 0;
   }
 
-  #contact-form {
-    float: right;
-  }
+ 
   .col-xs-12.col-sm-12.col-md-12.col-lg-12 {
     padding: 0 20% 0 20%;
   }
