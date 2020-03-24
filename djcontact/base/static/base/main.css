@@ -300,7 +300,7 @@ text-decoration:none;
 }
 
 .fa{
-   color:#4183D7;
+   color:rgb(0, 0, 0);
 }
 
 #box_text{
@@ -493,9 +493,11 @@ text-decoration:none;
   margin-top: 25px;
   font-size: 1.9em;
   flex-wrap: wrap;
+  background-color: #eeeeee;
 }
 
-.technologies .parallax {
+.technologies 
+.parallax {
   background-color: #8f9296;
   opacity: 1;
 }
