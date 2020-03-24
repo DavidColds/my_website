@@ -52,7 +52,6 @@ header h2 {
 	width: 100%;
 	height: 100%;
 	z-index: 1;
-	background-color: rgba(255,255,255,0.1);
 	transition: all 0.3s;
 }
 .nav-item:hover::before {
@@ -81,12 +80,11 @@ header h2 {
 .site {
   text-align: center;
   background-color: #efefef;
-  font-size: .8em;
   position: relative;
 }
 
 .site a {
-  color: #666;
+  color: rgb(223, 223, 223);
   text-decoration: none;
 }
 
@@ -104,96 +102,12 @@ header h2 {
 }
 
 .site nav a {
-  padding: 5px 10px;
-  font-size: 1.7em;
   display: inline-block;
 }
 
 .site nav a:hover {
   background: rgb(218, 218, 218);
   color: #222;
-}
-nav ul li{
-  display: inline-block;
-  line-height: 80px;
-  margin: 0 15px;
-}
-nav ul li a{
-  position: relative;
-  color: white;
-  font-size: 18px;
-  text-transform: uppercase;
-}
-li { display: block; text-align:center;  }
-
-ul { padding:0px; }
-
-nav ul li a:before{
-  position: absolute;
-  content: '';
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 3px;
-	background: white;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform .4s linear;
-}
-nav ul li a:hover:before{
-  transform: scaleX(1);
-  transform-origin: left;
-}
-label #btn,
-label #cancel{
-  font-size: 30px;
-  color: white;
-  float: right;
-  line-height: 80px;
-  cursor: pointer;
-  display: none;
-}
-#check{
-  display: none;
-}
-@media (max-width: 944px){
-	nav ul li a{
-		font-size: 17px;
-	}
-}
-@media (max-width: 860px){
-  label #btn{
-    display: block;
-  }
-  ul{
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #34495e;
-    top: 80px;
-    left: -100%;
-    text-align: center;
-    transition: all .5s;
-  }
-  nav ul li{
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-  }
-  nav ul li a{
-    padding:0;
-    width:100%;
-    text-align:center;
-    }
-  #check:checked ~ ul{
-    left: 0;
-  }
-	#check:checked ~ label #btn{
-    display: none;
-  }
-	#check:checked ~ label #cancel{
-    display: block;
-  }
 }
 
 
@@ -358,14 +272,44 @@ hr {
 
 /******************************************* End Intro text on the background **/
 
-/******************************************* Projects collumn **/
+/******************************************* What I do **/
+
+.span{
+  font-size:15px;
+}
+
+.a{
+text-decoration:none; 
+
+}
+.box{
+  padding:60px 0px;
+}
+
+.box {
+  background-color: #eeeeee;
+}
+.box-part{
+  background:#FFF;
+  border-radius:0;
+  padding:60px 10px;
+  margin:30px 0px;
+}
+.text{
+  margin:20px 0px;
+}
+
+.fa{
+   color:#4183D7;
+}
+
+#box_text{
+  color: #868686;
+}
 
 
 
-
-
-
-/******************************************* end Projects collumn **/
+/******************************************* end What I do **/
 
 
 /******************************************* Project card **/
