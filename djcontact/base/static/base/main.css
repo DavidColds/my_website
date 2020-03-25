@@ -350,6 +350,63 @@ text-decoration:none;
 
 
 
+
+/******************************************* parallax hireme  **/
+
+
+
+#hire_me .parallax{
+  font-family: 'Raleway', sans-serif;
+  background-image: url("https://images.unsplash.com/photo-1547860546-fa91780a4ef3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1569&q=80");
+  height: 350px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+
+
+.text-box{
+height: 600px;
+padding: 50px;
+}
+@media only screen and (max-device-width: 1024px) {
+  .parallax {
+      background-attachment: scroll;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************************* End  **/
+
+
+
 /* start contact me */
 .contactme a {
   display: inline-block;
@@ -481,29 +538,14 @@ contact-form{
 
 
 
-.page-section {
-  position: fixed;
-  display: flex;
-  width: 100%;
-  max-width: 1000px;
-  height: 100vh;
-  animation: all 0.5s ease;
-  flex-direction: column-reverse;
-  justify-content: center;
-}
 
 .technologies {
   margin-top: 25px;
   font-size: 1.9em;
   flex-wrap: wrap;
-  background-color: #eeeeee;
+  background-color: #f5f5f5b2;
 }
 
-.technologies 
-.parallax {
-  background-color: #8f9296;
-  opacity: 1;
-}
 
 /******************************************* End Page section show  **/
 
