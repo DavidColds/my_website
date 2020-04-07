@@ -6,6 +6,16 @@ html {
   overflow-x: hidden;
 }
 
+
+
+
+
+
+
+
+
+
+
 /******************************************* Nav with parallax**/
 #background {
   height: 100vh;
@@ -381,29 +391,6 @@ padding: 50px;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /******************************************* End  **/
 
 
@@ -420,11 +407,6 @@ padding: 50px;
   line-height: 35px;
   margin-left: 3px;
   margin: 10px;
-}
-
-contact-form{
-  margin: 0 auto;
-  width:80%;
 }
 #contact{
   font-family: 'Raleway', sans-serif;
