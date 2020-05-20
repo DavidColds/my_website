@@ -1,5 +1,3 @@
-{% load bootstrap4 %}
-{% load static %}
 <!doctype html>
 <html lang="en">
 
@@ -13,7 +11,10 @@
         href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
     <!-- Main CSS -->
-    <link rel="stylesheet" href="{% static 'base/main.css' %}" type="text/css">
+    <link rel="stylesheet" href="static/css/main.css" type="text/css">
+
+    <link rel="stylesheet" href="static/css/stars.css" type="text/css">
+
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
@@ -38,76 +39,90 @@
 </head>
 
 <body style="overflow-x: hidden;">
+    <div id="particles-js"></div>
 
-    <!-- Parallax landing with nav -->
+    <!--
+    ============================================================= 
+    Nav
+    ============================================================= 
+    -->
+    <header class="main_h">
+        <div class="row">
+            <a class="logo" href="#">D/D</a>
 
+            <div class="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href=".sec01">Section 01</a></li>
+                    <li><a href=".sec02">Section 02</a></li>
+                    <li><a href=".sec03">Section 03</a></li>
+                    <li><a href=".sec04">Section 04</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--
+    ============================================================= 
+    Landing page with text
+    ============================================================= 
+    -->
     <div class="wrapper">
         <div class="parallax">
             <section class="pfblock-image screen-height">
                 <div class="intro" style="overflow-x: hidden">
-
                     <div class="start" style="color:black;" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
                         data-aos-delay="100">HI!</div>
-
                     <div class="start" style="color:black;" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
                         data-aos-delay="300"> I AM DAVID</div>
-
                     <h3 style="color:black;" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
                         data-aos-delay="500">
                         FULL-STACK DEVELOPER</h3>
-
                     <div class="contactme" style="overflow: hidden;" data-aos="fade-zoom-in"
                         data-aos-easing="ease-in-back" data-aos-delay="600">
-
                         <a href="https://www.linkedin.com/in/daviddrughi/" target="_blank"><i
                                 class="fa fa-linkedin"></i></a>
                         <a href="https://github.com/DavidColds" target="_blank"><i class="fa fa-github"></i></a>
                         <a href="#contact"><i class="fa fa-envelope"></i></a>
-
                     </div>
                 </div>
-
                 <div class="scroll-down-text" style="color:black;">Scroll me!</div>
             </section>
         </div>
-        <header>
-            <div id="background">
-                <section>
+        <div id="background">
+            <section>
 
-                    <a href="#about" class="scroll-down" address="true">
-                    </a>
+                <a href="#about" class="scroll-down" address="true">
+                </a>
 
-                </section>
-            </div>
-        </header>
+            </section>
+        </div>
     </div>
-
 
     <br>
 
-    <div class="site">
-        <nav>
 
-            <a class="nav-item nav-link" href="#about">About</a>
+    <!--
+    ============================================================= 
+    About Section
+    ============================================================= 
+    -->
 
-            <a class="nav-item nav-link" href="#projects">Projects</a>
-
-            <a class="nav-item nav-link" href="#technologies">Technologies </a>
-
-            <a class="nav-item nav-link" href="#contact">Contact </a>
-
-        </nav>
-    </div>
-
-
-
-    <!-- About me section -->
-
-    <section data-aos="fade-down" data-aos-anchor-placement="bottom-bottom" id="about">
+    <section id="about">
         <div class="container">
             <div class="feature-content">
                 <div class="row">
-                    <div class="col-lg-8 offset-lg-2">
+                    <div class="col-lg-4 mb-4 mb-lg-0 d-flex align-items-center justify-content-left">
+                        <h1 class="display-3">
+                            Om mig
+                        </h1>
+                    </div>
+                    <div class="col-lg-6">
                         <h4>About Me</h4>
                         <p> Hello, My name is David Drughi, and I am a Stockholm based Full-Stack Developer. I am a
                             self-motivated person who is willing to
@@ -122,10 +137,14 @@
     </section>
 
 
-    <!--End about me section -->
 
 
-    <!-- What I do cards  -->
+    <!--
+    ============================================================= 
+Skills
+    ============================================================= 
+    -->
+
     <div class="box" style="overflow-x: hidden">
         <div class="container">
             <div data-aos="zoom-in-up" id='box_text' class="col-lg-8 offset-lg-2 text-center">
@@ -184,8 +203,9 @@
                             <h4>Responsive</h4>
                         </div>
                         <div class="text">
-                            <span> I will adapt your website fot the best possible user experience on all devices!
-                            </span>
+                            <span> I will adapt your website fot the best possible user experience on all
+                                devices! </span>
+
                         </div>
                     </div>
                 </div>
@@ -438,11 +458,7 @@
 
 
     <!-- Contact  -->
-
-
     <hr>
-
-
     <div id="hire_me">
         <div id='contact' class="parallax">
             <div class="col-lg-12 text-box text-center">
@@ -456,33 +472,7 @@
         </div>
     </div>
     <br>
-    <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="container-fluid">
-        <div class="item">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 col-md-12 col-lg-12 text-center">
-                        <form name="myForm" class="form" action="#" onsubmit="return validateForm()" method="POST"
-                            role="form">
-                            {% csrf_token %}
-                            {% bootstrap_form form %}
-                            <div class="form-actions">
-                                <div class="text-center margin-top-25">
-                                    <button type="submit" class="btn btn-mod btn-border btn-large">Send Message</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
     <br>
-
-
-
     <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100" data-aos-offset="0">
         <footer>
             <div class="footer-limiter">
@@ -522,7 +512,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
@@ -530,7 +520,9 @@
         AOS.init();
     </script>
 
-    <script type="text/javascript" src="{% static 'js/main.js'%}"></script>
+    <script type="text/javascript" src="static/js/main.js"></script>
+
+    <script type="text/javascript" src="static/js/stars.js"></script>
 </body>
 
 </html>
