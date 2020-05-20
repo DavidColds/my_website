@@ -13,9 +13,7 @@ html {
 }
 
 hr {
-  width: 60%;
-  background: #fff;
-  margin: 20px auto;
+  background:#d5ad18;
   box-shadow: 0.5px 0.5px 1px rgba(0, 0, 0);
 }
 
@@ -60,6 +58,33 @@ Background
   line-height: 3;
 }
 
+.intro {
+  position: absolute;
+  width: 100%;
+  top: 35%;
+  left: 0;
+  text-align: center;
+  -webkit-transform: translate(0%, -50%);
+  -moz-transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+  -o-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+  padding: 0 15px;
+}
+
+.intro h3 {
+  font-weight: 800;
+}
+
+.start {
+  font-family: 'Raleway', sans-serif;
+  font-size: 76px;
+  font-style: normal;
+  text-transform: none;
+  margin: 0px 0;
+  letter-spacing: 11px;
+}
+
 /*
 ============================================================= 
 Navbar
@@ -101,7 +126,7 @@ Navbar
   background-color: rgba(255, 255, 255, 0.93);
   opacity: 1;
   top: 0px;
-  border-bottom: 1px solid gainsboro;
+  border-bottom: 1px solid #d5ad18;
 }
 
 .logo {
@@ -194,7 +219,7 @@ nav ul a {
   height: 4px;
   margin-bottom: 6px;
   border-radius: 1000px;
-  background: #8f8f8f;
+  background: #d5ad18;
   display: block;
 }
 
@@ -329,75 +354,142 @@ About Section
 
 
 
-/******************************************* Intro text on the background **/
+/*
+============================================================= 
+services section
+============================================================= 
+*/
 
 
-.intro {
-  position: absolute;
+
+#services {
+  background-color: rgba(65, 65, 65, 0.897);
   width: 100%;
-  top: 35%;
-  left: 0;
-  text-align: center;
-  -webkit-transform: translate(0%, -50%);
-  -moz-transform: translate(0%, -50%);
-  -ms-transform: translate(0%, -50%);
-  -o-transform: translate(0%, -50%);
-  transform: translate(0%, -50%);
-  padding: 0 15px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 140px 0;
 }
 
-.intro h3 {
-  font-weight: 800;
+.service-block {
+  padding: 30px;
 }
 
-.start {
-  font-family: 'Raleway', sans-serif;
-  font-size: 76px;
-  font-style: normal;
-  text-transform: none;
-  margin: 0px 0;
-  letter-spacing: 11px;
+.service-block .icon {
+  color: rgb(235, 235, 235);
+  font-size: 60px;
+  opacity: 1;
+  -webkit-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  transform: translateY(-20px);
+  -webkit-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out;
 }
 
-/******************************************* End Intro text on the background **/
-
-/******************************************* What I do **/
-
-.span {
-  font-size: 15px;
+.service-block .service-icon-animate {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
 }
 
-.a {
-  text-decoration: none;
-
+.hb:nth-child(1),
+.hb:nth-child(2),
+.hb:nth-child(3) {
+  border-bottom: 1px #d5ad18 solid;
 }
 
-.box {
-  padding: 60px 0px;
+@media screen and (max-width: 991px) {
+  .hb:nth-child(-n+4) {
+    border-bottom: 1px #d5ad18 solid;
+  }
 }
 
-.box {
-  background-color: #eeeeee;
+@media screen and (max-width: 768px) {
+  .hb:nth-child(5) {
+    border-bottom: 1px #d5ad18 solid;
+  }
 }
 
-.box-part {
-  background: #FFF;
-  border-radius: 0;
-  padding: 60px 10px;
-  margin: 30px 0px;
+.vb:nth-child(1),
+.vb:nth-child(2),
+.vb:nth-child(4),
+.vb:nth-child(5) {
+  border-right: 1px #d5ad18 solid;
 }
 
-.text {
-  margin: 20px 0px;
+@media screen and (max-width: 991px) {
+
+  .vb:nth-child(1),
+  .vb:nth-child(2),
+  .vb:nth-child(4),
+  .vb:nth-child(5) {
+    border-right: none;
+  }
+
+  .vb:nth-child(2n+1) {
+    border-right: 1px #d5ad18 solid;
+  }
 }
 
-.fa {
-  color: rgb(0, 0, 0);
+@media screen and (max-width: 768px) {
+  .vb:nth-child(-n+6) {
+    border-right: none;
+  }
 }
 
-#box_text {
-  color: #868686;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
