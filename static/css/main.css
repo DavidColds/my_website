@@ -9,6 +9,7 @@ html {
   font-family: 'Playfair Display', serif;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  padding-right: 0 !important;
 }
 
 hr {
@@ -529,7 +530,7 @@ Testimonials
   margin: -17px auto 0;
   display: table;
   width: auto;
-  background: #3190E7;
+  background: #b78c33;
   padding: 9px 35px;
   border-radius: 12px;
   text-align: center;
@@ -563,7 +564,7 @@ Testimonials
 
 #customers-testimonials.owl-carousel .owl-dots .owl-dot.active span,
 #customers-testimonials.owl-carousel .owl-dots .owl-dot:hover span {
-  background: #3190E7;
+  background: #b78c33;
   transform: translate3d(0px, -50%, 0px) scale(0.7);
 }
 
@@ -578,7 +579,7 @@ Testimonials
 }
 
 #customers-testimonials.owl-carousel .owl-dots .owl-dot span {
-  background: #3190E7;
+  background: #b78c33;
   display: inline-block;
   height: 20px;
   margin: 0 2px 5px;
