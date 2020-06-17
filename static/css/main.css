@@ -68,8 +68,6 @@ Background
 }
 
 
-
-
 .subheading {
   font-family: "Playfair Display", serif;
   font-size: 3em;
@@ -115,7 +113,7 @@ Background
 }
 
 /*================================================
-Start Important Part
+ Background Start Important Part
 ==================================================*/
 .underline--magical {
   background-repeat: no-repeat;
@@ -131,7 +129,7 @@ Start Important Part
 }
 
 /*================================================
-End Important Part
+ Background End Important Part
 ==================================================*/
 
 
@@ -158,13 +156,14 @@ End Important Part
 
 .ml12 {
   padding-left: 100px;
-  font-weight: 200;
-  font-size: 3.8em;
+  font-weight: 700;
+  font-size: 4.8em;
   text-transform: uppercase;
   letter-spacing: 0.5em;
 }
 
 .ml12 .letters {
+  margin: 30px;
   padding-left: 200px;
   line-height: 1em;
   position: absolute;
@@ -178,73 +177,11 @@ End Important Part
 @media screen and (max-width: 1024px) {
   .ml12 .letters {
     padding-left: 0;
-    padding-top: 20px;
+    padding-top: 20pxs;
     font-size: 3.2rem;
   }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
