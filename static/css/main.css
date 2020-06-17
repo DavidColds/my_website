@@ -32,58 +32,221 @@ Background
 ============================================================= 
 */
 
-.hero {
-  position: relative;
-  background: url(../img/cover.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  text-align: center;
-  color: #fff;
-  padding-top: 110px;
+
+
+
+.rgba-gradient {
   height: 100vh;
-  letter-spacing: 2px;
+  background: linear-gradient(to left, #292E49, #9fc0d3);
 }
 
-.hero h1 {
-  font-size: 50px;
-  line-height: 1.3;
+
+.heading {
+  font-family: "Playfair Display", serif;
+  padding-top: 10px;
+  padding-left: 200px;
+  font-size: 5vw;
+  text-transform: uppercase;
+
 }
 
-.hero h1 span {
-  font-size: 25px;
-  color: #e8f380;
-  border-bottom: 2px solid #e8f380;
-  padding-bottom: 12px;
-  line-height: 3;
+.heading1 {
+  padding-left: 200px;
+  padding-top: 200px;
+  font-family: "Playfair Display", serif;
+  font-size: 4vw;
+  text-transform: uppercase;
+
 }
 
-.intro {
-  position: absolute;
+.heading3 {
+  padding-left: 200px;
+  padding-top: 100px;
+  font-family: "Playfair Display", serif;
+  font-size: 4vw;
+  text-transform: uppercase;
+}
+
+
+
+
+.subheading {
+  font-family: "Playfair Display", serif;
+  font-size: 3em;
+  line-height: 1.5;
+  text-transform: uppercase;
+
+}
+
+
+@media screen and (max-width: 1024px) {
+
+  .heading {
+    padding-left: 0;
+    font-size: 9vw;
+  }
+
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    width: 100%;
+  }
+
+  .heading1 {
+    padding-left: 0;
+    padding-top: 200px;
+    font-size: 9vw;
+  }
+
+  .heading3 {
+
+    padding-left: 0;
+    padding-top: 100px;
+    font-size: 9vw;
+
+  }
+
+  .subheading {
+    padding-right: 0;
+    font-size: 4vw;
+  }
+
+}
+
+/*================================================
+Start Important Part
+==================================================*/
+.underline--magical {
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
+  animation: widthStretch 2s ease;
+
+}
+
+.underline--magical:hover {
+  background-size: 100% 88%;
+}
+
+/*================================================
+End Important Part
+==================================================*/
+
+
+.paragraphUnderline:after {
+  content: '';
+  display: flex;
+  height: 10px;
+  margin-top: 6px;
   width: 100%;
-  top: 35%;
-  left: 0;
-  text-align: center;
-  -webkit-transform: translate(0%, -50%);
-  -moz-transform: translate(0%, -50%);
-  -ms-transform: translate(0%, -50%);
-  -o-transform: translate(0%, -50%);
-  transform: translate(0%, -50%);
-  padding: 0 15px;
+  animation: widthStretch 2s ease;
 }
 
-.intro h3 {
-  font-weight: 800;
+@keyframes widthStretch {
+  from {
+    width: 0;
+    background: transparent;
+  }
+
+  to {
+    width: 100%;
+  }
 }
 
-.start {
-  font-family: 'Playfair Display', serif;
-  font-size: 76px;
-  font-style: normal;
-  text-transform: none;
-  margin: 0px 0;
-  letter-spacing: 11px;
+
+.ml12 {
+  padding-left: 100px;
+  font-weight: 200;
+  font-size: 3.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
 }
+
+.ml12 .letters {
+  padding-left: 200px;
+  line-height: 1em;
+  position: absolute;
+  margin: auto;
+  left: 10px;
+  right: 0;
+  opacity: 0;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .ml12 .letters {
+    padding-left: 0;
+    padding-top: 20px;
+    font-size: 3.2rem;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
 ============================================================= 
@@ -331,7 +494,6 @@ About Section
 
 .display-3 {
   color: #FFB302;
-
 }
 
 #about {
@@ -458,51 +620,27 @@ Projects
 */
 
 
-.gallery {
-  -webkit-column-count: 3;
-  -moz-column-count: 3;
-  column-count: 3;
-  -webkit-column-width: 33%;
-  -moz-column-width: 33%;
-  column-width: 33%;
-}
 
-.gallery .pics {
-  -webkit-transition: all 350ms ease;
-  transition: all 350ms ease;
-}
 
-.gallery .animation {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
 
-@media (max-width: 450px) {
-  .gallery {
-    -webkit-column-count: 1;
-    -moz-column-count: 1;
-    column-count: 1;
-    -webkit-column-width: 100%;
-    -moz-column-width: 100%;
-    column-width: 100%;
-  }
-}
 
-@media (max-width: 400px) {
-  .btn.filter {
-    padding-left: 1.1rem;
-    padding-right: 1.1rem;
-  }
-}
 
-button.close {
-  position: absolute;
-  right: 0;
-  z-index: 2;
-  padding-right: 1rem;
-  padding-top: .6rem;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
 ============================================================= 
@@ -596,7 +734,7 @@ Footer
 */
 
 footer.nb-footer {
-  
+
   background: #222;
   border-top: 4px solid #b78c33;
 }
@@ -674,5 +812,3 @@ footer.nb-footer .copyright p {
   margin: 0;
   padding: 0;
 }
-
-
