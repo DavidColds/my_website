@@ -20,7 +20,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -73,7 +74,7 @@
     <header>
         <div id="intro-section" class="view">
             <div id="fadein-trigger" class="rgba-gradient">
-                <div class="container-fluid my-5 z-depth-1">
+                <div class="container-fluid my-5">
                     <!--Section: Content-->
                     <section class="dark-grey-text">
                         <div class="row pr-lg-5">
@@ -116,13 +117,15 @@
     <div id="fadeout-trigger">
 
     </div>
+
     <!--
     ============================================================= 
     About Section
     ============================================================= 
     -->
-    <section id="about" >
-        <div  class="container" >
+
+    <section id="about">
+        <div class="container">
             <div class="feature-content">
                 <div class="row">
                     <div class="col-lg-4 mb-4 mb-lg-0 d-flex align-items-center justify-content-left">
@@ -144,106 +147,73 @@
         </div>
     </section>
 
+
+
+
+
     <!--
     ============================================================= 
-Skills
+    Call to action  
     ============================================================= 
     -->
 
 
-    <hr>
+    <div class="container my-5 py-5 z-depth-1">
 
-    <section id="services">
-        <div class="container">
-            <div class="col-lg-4 mb-4 mb-lg-0 d-flex align-items-center justify-content-left">
-                <h1 class="display-3">
-                    Mina Tjänster
-                </h1>
+        <section class="px-md-5 mx-md-5 text-center dark-grey-text">
+
+            <div class="row d-flex justify-content-center">
+
+                <div class="col-xl-6 col-md-8">
+
+                    <h3 class="font-weight-bold">Websites done right!</h3>
+
+                    <p class="text-muted"> I will turn visitators into clients! </p>
+
+                    <a class="btn btn-info btn-md ml-0 mb-5" href="#" role="button">Start now<i
+                            class="fa fa-magic ml-2"></i></a>
+
+                </div>
+
             </div>
 
-            <div class="row center-xs center-sm center-md center-lg trigger">
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 hb vb">
-                    <div class="service-block">
-                        <i class="icon fa fa-laptop"></i>
-                        <h3>Koncept</h3>
-                        <p>
-                            -Grundläggande tonalitet <br>
-                            -Grundläggande copy och rubriksättning <br>
-                            -Grundläggande bildinnehåll<br>
-                            -Wireframes (innehållsskisser) + sitemap<br>
-                            -Interaktivitet och besökarflöden med konvertering</p>
-                    </div>
+
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6">
+                    <i class="fas fa-gem fa-3x blue-text"></i>
+
+                    <p class="font-weight-bold my-3">Consult</p>
+
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-                <!--Row 1-->
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 hb vb">
-                    <div class="service-block">
-                        <i class="icon fas fa-chalkboard"></i>
-                        <h3>Innehållsproduktion</h3>
-                        <p>
-                            -Foto- & videoproduktion <br>
-                            -Illustrationer + grafiska element <br>
-                            -Copy <br>
-                            -Kompletterande innehåll</p>
-                    </div>
+                <div class="col-lg-3 col-md-6">
+                    <i class="fas fa-chart-area fa-3x teal-text"></i>
+
+                    <p class="font-weight-bold my-3">Reseacrch </p>
+
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
 
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 hb vb">
-                    <div class="service-block">
-                        <i class="icon fa fa-copy"></i>
-                        <h3>Design</h3>
-                        <p> -Grafisk profil, framtagande eller anpassning av befintlig <br>
-                            -Startsida <br>
-                            -Viktiga landningssidor <br>
-                            -Generella sidor <br>
-                            -Interaktionsdesign <br>
-                            -Responsive webbdesign</p>
-                    </div>
+                <div class="col-lg-3 col-md-6">
+                    <i class="fas fa-cogs fa-3x indigo-text"></i>
+
+                    <p class="font-weight-bold my-3">Build </p>
+
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
 
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 hb vb">
-                    <div class="service-block">
-                        <i class="icon fas fa-code"></i>
-                        <h3>Webbutveckling</h3>
-                        <p> -Installation av plattform <br>
-                            -Uppsättning av versionshantering <br>
-                            -Frontend, HTML, CSS och Javascript <br>
-                            -Backend, Python och databas <br>
-                            -Testning i enheter och plattformar <br>
-                            -Systemutveckling <br>
-                        </p>
-                    </div>
-                </div>
+                <div class="col-lg-3 col-md-6">
+                    <i class="fas fa-cloud-upload-alt fa-3x deep-purple-text"></i>
 
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 hb vb">
-                    <div class="service-block">
-                        <i class=" icon fas fa-plane-departure"></i>
-                        <h3>Lansering </h3>
-                        <p> -Konfiguration av webserver <br>
-                            -Installation av webbplats med testning <br>
-                            -Sökmotoroptimering <br>
-                            -Domänpekning/ -hantering <br>
-                        </p>
-                    </div>
-                </div>
+                    <p class="font-weight-bold my-3">Grow!</p>
 
-
-
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 hb vb">
-                    <div class="service-block">
-                        <i class="icon fa fa-cogs"></i>
-                        <h3>Efter lansering</h3>
-                        <p> -Utvärdering och tester <br>
-                            -Google Analytics med målspårning <br>
-                            -Marknadsföring och löpande SEO <br>
-                            -Förvaltningsuppdrag med drift <br>
-                            -Löpande arbete med innehållsproduktion, copy, bilder, artiklar och nya funktioner.
-                        </p>
-                    </div>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
+        </section>
+    </div>
 
-        </div>
-    </section>
 
 
     <!--
@@ -252,82 +222,249 @@ Skills
     ============================================================= 
     -->
 
-    <div class="container my-5 z-depth-1">
-        <section class="dark-grey-text">
-            <div class="col-12">
-                <div class="row">
 
-                    <div class="col-md-6">
-                        <img src="static/img/modal2.jpg" class="img-fluid" alt="smaple image">
+    <div style="text-align:center">
+        <h2>Portfolio</h2>
+    </div>
+
+
+
+    <div class="container-fluid my-5 py-5 z-depth-1">
+        <section class="px-md-5 mx-md-5 dark-grey-text text-center text-lg-left">
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center">
+                    <img src="static/img/pic1.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center">
+
+                    <div class="mna">
+                        <h1 class="xlarge-font" style="color: #d5ad18;"><b>MNA Transport</b></h1>
+                        <p>
+                            <span style="font-size:36px"> Med över 1200 st. leveranser varje dag,
+                            </span>
+                            <p style="color: black;">
+                                MNA Transport & Service AB är ett svenskt transportföretag i
+                                Stockholm som startade upp sin verksamhet i augusti 2016 och som har haft ett hög
+                                tillväxt
+                                och
+                                vi är stolta över vad vi har åstadkommit
+                            </p>
+                        </p>
+                        <a href="https://www.transportmna.se/" target="blank">
+                            <button class="button">transportmna.se</button>
+                        </a>
                     </div>
+                </div>
+        </section>
 
+        <hr>
 
-                    <div class="col-md-6 d-flex align-items-center">
-                        <div>
-                            <h3 class="font-weight-bold mb-4">Material Design Blocks</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adip elit. Maiores deleniti explicabo voluptatem
-                                quisquam nulla asperiores aspernatur aperiam voluptate et consectetur minima delectus,
-                                fugiat eum soluta blanditiis adipisci, velit dolore magnam.</p>
+        <section class="px-md-5 mx-md-5 dark-grey-text text-center text-lg-right">
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center">
+                    <div class="tattoo">
+                        <h1 class="xlarge-font" style="color: #d5ad18;"><b>Cecilia Pisano</b></h1>
+                        <p>
+                            <span style="font-size:36px">Tattoo artist and painter,</span>
 
-                            <button type="button" class="btn btn-orange btn-rounded mx-0">Download</button>
-                        </div>
+                            <p>
+                                Cecilia is also an activist, a nature lover and light worker,
+                                a spiritual student, a mysticist, and a fighter for the people as well a strong believer
+                                in
+                                unity. She comes from the suburbs of
+                                Stockholm Sweden, where she started her tattoo career since 2012.
+                            </p>
+
+                        </p>
+                        <a href="https://lepetitsalon.se/" target="blank">
+                            <button class="button">PisanoArts.com</button>
+                        </a>
                     </div>
+                </div>
+                <div class="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center">
+                    <img src="static/img/pic3.jpg" class="img-fluid" alt="">
+                </div>
+        </section>
 
+        <hr>
+
+        <section class="px-md-5 mx-md-5 dark-grey-text text-center text-lg-left">
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center">
+                    <img src="static/img/pic2.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center">
+
+                    <div class="salon">
+                        <h1 class="xlarge-font" style="color: #d5ad18;"><b>LePetitSalon</b></h1>
+                        <span style="font-size:36px"> En professionell hudvårdssalong i Stockholm,
+                        </span>
+                        <p>
+                            som välkomnar dig till en harmonisk miljö där vi tar hand om dig och din hud på bästa
+                            möjliga sätt
+                            Här kan du vara trygg, koppla av och glömma bort vardagens stress. Vi erbjuder personliga
+                            behandlingar med produkter och tjänster av bästa kvalitet.
+                        </p>
+                        <a href="https://lepetitsalon.se/" target="blank">
+                            <button class="button">LePetitSalon.se</button>
+                        </a>
+                    </div>
+                </div>
         </section>
     </div>
 
 
 
-    <div class="container my-5 z-depth-1">
-        <section class="dark-grey-text">
-            <div class="col-12">
-                <div class="row">
 
 
 
 
-                    <div class="col-md-6 d-flex align-items-center">
-                        <div>
-                            <h3 class="font-weight-bold mb-4">Material Design Blocks</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adip elit. Maiores deleniti explicabo voluptatem
-                                quisquam nulla asperiores aspernatur aperiam voluptate et consectetur minima delectus,
-                                fugiat eum soluta blanditiis adipisci, velit dolore magnam.</p>
+    <header class='timeline '>
+        <h1>Hur jag kan hjälpa dig </h1>
+    </header>
 
-                            <button type="button" class="btn btn-orange btn-rounded mx-0">Download</button>
-                        </div>
-                    </div>
+    <ul class="timeline">
+        <!-- Item 1 -->
+        <li>
+            <div class="direction-r">
+                <div class="flag-wrapper">
+                    <span class="hexa"></span>
+                    <span class="time-wrapper"><span class="time">Unik Modern Responsive Design</span></span>
+                </div>
+            </div>
+        </li>
 
-                    <div class="col-md-6">
-                        <img src="static/img/modal1.jpg" class="img-fluid" alt="smaple image">
-                    </div>
+        <!-- Item 2 -->
+        <li>
+            <div class="direction-l">
+                <div class="flag-wrapper">
+                    <span class="hexa"></span>
+                    <span class="time-wrapper"><span class="time">Genomtänkt struktur för SEO och konvertering
 
-        </section>
-    </div>
+                </div>
+            </div>
+        </li>
+
+        <!-- Item 3 -->
+        <li>
+            <div class="direction-r">
+                <div class="flag-wrapper">
+                    <span class="hexa"></span>
+                    <span class="time-wrapper"><span class="time">-Foto- & videoproduktion <br>-Illustrationer +
+                            grafiska element</span></span>
+
+                    </span></span>
+                </div>
+            </div>
+        </li>
+
+        <li>
+            <div class="direction-l">
+                <div class="flag-wrapper">
+                    <span class="hexa"></span>
+                    <span class="time-wrapper"><span class="time">Teknisk webbproduktion och säker drift</span></span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="direction-r">
+                <div class="flag-wrapper">
+                    <span class="hexa"></span>
+                    <span class="time-wrapper"><span class="time">Support, underhåll och vidareutveckling
+                        </span></span>
+                </div>
+            </div>
+        </li>
+
+    </ul>
 
 
-    <div class="container my-5 z-depth-1">
-        <section class="dark-grey-text">
-            <div class="col-12">
-                <div class="row">
-
-                    <div class="col-md-6">
-                        <img src="static/img/modal4.jpg" class="img-fluid" alt="smaple image">
-                    </div>
 
 
-                    <div class="col-md-6 d-flex align-items-center">
-                        <div>
-                            <h3 class="font-weight-bold mb-4">Material Design Blocks</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adip elit. Maiores deleniti explicabo voluptatem
-                                quisquam nulla asperiores aspernatur aperiam voluptate et consectetur minima delectus,
-                                fugiat eum soluta blanditiis adipisci, velit dolore magnam.</p>
 
-                            <button type="button" class="btn btn-orange btn-rounded mx-0">Download</button>
-                        </div>
-                    </div>
 
-        </section>
-    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!--
     ============================================================= 
@@ -492,7 +629,8 @@ Skills
     <!-- End ScrollMagic -->
 
     <!-- ScrollMagic Plugins -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.1/plugins/animation.gsap.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.1/plugins/animation.gsap.js"
+        crossorigin="anonymous"></script>
     <!-- ScrollMagic Plugins -->
 
     <!-- Anime JS -->
