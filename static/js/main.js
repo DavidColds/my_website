@@ -244,7 +244,25 @@ var fadeout_scene = new ScrollMagic.Scene({
 .setTween(fadeout_tween)
 .addTo(controller);
 
+$(document).ready(function () {
 
+  $('.owl-carousel').owlCarousel({
+      loop: true,
+      nav: false,
+      responsive: {
+          0: {
+              items: 1
+          },
+          600: {
+              items: 1
+          },
+          1000: {
+              items: 1
+          }
+      }
+  })
+
+});
 
 
 
