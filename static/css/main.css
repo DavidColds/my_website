@@ -27,7 +27,7 @@ a {
 
 .imagemodule {
   padding: 30px;
-  background-color: rgba(39, 39, 39, 0.376);
+  background-color:rgb(65, 65, 65);
 }
 
 /*
@@ -36,7 +36,7 @@ Background
 ============================================================= 
 */
 
-.rgba-gradient {
+#intro-section {
   height: 100vh;
   background: linear-gradient(to left, #292E49, #9fc0d3);
 }
@@ -437,18 +437,12 @@ About Section
   background-color: rgb(65, 65, 65);
   font-size: 25px;
   color: rgb(189, 189, 189);
+  padding: 30px;
 }
 
-/* projects text */
-#projects {
-  color: #8f9296;
 
-}
-
-/*end projects text*/
-.feature-content {
-  padding: 8rem 0;
-  overflow: hidden;
+about-image{
+  padding: 30px;
 }
 
 
