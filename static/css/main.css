@@ -24,7 +24,8 @@ hr {
 a {
   text-decoration: none;
 }
-.imagemodule{
+
+.imagemodule {
   padding: 30px;
   background-color: rgba(39, 39, 39, 0.376);
 }
@@ -73,7 +74,6 @@ Background
   font-size: 3em;
   line-height: 1.5;
   text-transform: uppercase;
-
 }
 
 

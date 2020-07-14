@@ -225,69 +225,56 @@ anime.timeline({
 
 
 
-var fadein_tween = TweenMax.to('#fadein-trigger > div', .375, { opacity: 1});
-var fadeout_tween = TweenMax.to('#fadein-trigger > div', .375, { opacity: 0 });
+var fadein_tween = TweenMax.to('#fadein-trigger > div', .375, {
+  opacity: 1
+});
+var fadeout_tween = TweenMax.to('#fadein-trigger > div', .375, {
+  opacity: 0
+});
 
 var controller = new ScrollMagic.Controller();
 
 var fadein_scene = new ScrollMagic.Scene({
-   triggerElement: '#fadein-trigger',
-  reverse: true
-})
-.setTween(fadein_tween)
-.addTo(controller);
+    triggerElement: '#fadein-trigger',
+    reverse: true
+  })
+  .setTween(fadein_tween)
+  .addTo(controller);
 
 var fadeout_scene = new ScrollMagic.Scene({
-  triggerElement: '#fadeout-trigger',
-  reverse: true
-})
-.setTween(fadeout_tween)
-.addTo(controller);
+    triggerElement: '#fadeout-trigger',
+    reverse: true
+  })
+  .setTween(fadeout_tween)
+  .addTo(controller);
 
 
 
-jQuery(document).ready(function($) {
+
+  
+
+jQuery(document).ready(function ($) {
   "use strict";
   //  TESTIMONIALS CAROUSEL HOOK
   $('#customers-testimonials').owlCarousel({
-      loop: true,
-      center: true,
-      items: 3,
-      margin: 0,
-      autoplay: true,
-      dots:true,
-      autoplayTimeout: 8500,
-      smartSpeed: 450,
-      responsive: {
-0: {
-  items: 1
-},
-600: {
-  items: 1
-},
-1000: {
-  items: 1
-}
-}
+    loop: true,
+    center: true,
+    items: 3,
+    margin: 0,
+    autoplay: true,
+    dots: true,
+    autoplayTimeout: 8500,
+    smartSpeed: 450,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 1
+      },
+      1000: {
+        items: 1
+      }
+    }
   });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
