@@ -251,7 +251,7 @@ var fadeout_scene = new ScrollMagic.Scene({
 
 
 
-  
+
 
 jQuery(document).ready(function ($) {
   "use strict";
@@ -281,10 +281,13 @@ jQuery(document).ready(function ($) {
 
 
 
-// Document Ready
-$( document ).ready(function() {
+$(document).ready(function () {
   // AOS Transition Time
-   AOS.init({
-     duration: 1200,
-   })
-  }); //end document ready
+  AOS.init({
+    duration: 1200,
+  })
+});
+
+
+
+
