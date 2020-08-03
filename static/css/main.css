@@ -192,6 +192,8 @@ Navbar
 */
 
 .main_h {
+  font-family: 'Playfair Display', serif;
+
   position: fixed;
   top: 0px;
   max-height: 70px;
@@ -1121,7 +1123,6 @@ PARALLAX SCROLL
 .statement-01 {
   font-size: 45px;
   padding-top: 12%;
-
   padding-bottom:  12%;
   font-family: 'Playfair Display', serif;
 
