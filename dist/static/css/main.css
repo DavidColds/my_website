@@ -27,7 +27,7 @@ a {
 
 .imagemodule {
   padding: 30px;
-  background-color: rgba(65, 65, 65, 0.452);
+  background-color: rgba(236, 236, 236, 0.452);
 }
 
 /*
@@ -38,7 +38,7 @@ Background
 
 #intro-section {
   height: 100vh;
-  background: linear-gradient(to left, #292E49, #9fc0d3);
+  background: linear-gradient(rgb(185, 185, 185), #131313c9);
 }
 
 
@@ -52,6 +52,7 @@ Background
 }
 
 .heading1 {
+  color: #f4f4f4;
   padding-left: 200px;
   padding-top: 200px;
   font-family: 'Playfair Display', serif;
@@ -61,6 +62,7 @@ Background
 }
 
 .heading3 {
+  color: #f4f4f4;
   padding-left: 200px;
   padding-top: 100px;
   font-family: 'Playfair Display', serif;
@@ -70,6 +72,7 @@ Background
 
 
 .subheading {
+  color: #f4f4f4;
   font-family: 'Playfair Display', serif;
   font-size: 3em;
   line-height: 1.5;
@@ -93,14 +96,14 @@ Background
 
   .heading1 {
     padding-left: 0;
-    padding-top: 200px;
+    padding-top: 0px;
     font-size: 9vw;
   }
 
   .heading3 {
 
     padding-left: 0;
-    padding-top: 100px;
+    padding-top: 50px;
     font-size: 9vw;
 
   }
@@ -109,8 +112,39 @@ Background
     padding-right: 0;
     font-size: 4vw;
   }
-
 }
+
+
+
+@media screen and (min-width: 1024px) {
+  body {
+    width: 100%;
+  }
+
+  .heading1 {
+    padding-left: 0;
+    padding-top: 0px;
+    font-size: 5vw;
+  }
+
+  .heading3 {
+
+    padding-left: 0;
+    padding-top: 100px;
+    font-size: 5vw;
+
+  }
+
+  .subheading {
+    padding-right: 0;
+    font-size: 2vw;
+  }
+}
+
+
+
+
+
 
 /*================================================
  Background Start Important Part
@@ -163,6 +197,7 @@ Background
 }
 
 .ml12 .letters {
+  color: #d5ad18;
   margin: 30px;
   padding-left: 200px;
   line-height: 1em;
@@ -177,11 +212,12 @@ Background
 @media screen and (max-width: 1024px) {
   .ml12 .letters {
     padding-left: 0;
-    padding-top: 20pxs;
-    font-size: 3.2rem;
-  }
+    letter-spacing: 0.2em;
 
+    font-size: 9vw;
+  }
 }
+
 
 
 
@@ -433,14 +469,13 @@ About Section
 
 .display-3 {
   font-family: 'Playfair Display', serif;
-
   color: #FFB302;
 }
 
 #about {
   font-family: 'Playfair Display', serif;
 
-  background-color: rgb(65, 65, 65);
+  background-color: #131313c9;
   font-size: 25px;
   color: rgb(189, 189, 189);
   padding: 30px;
@@ -781,12 +816,19 @@ Timeline
   }
 }
 
+
+
+
 /*
 ============================================================= 
 Projects
 ============================================================= 
 */
 
+.portfolio {
+  padding: 50px;
+  background: linear-gradient(#131313c9, #fff);
+}
 
 .mna {
   padding: 64px;

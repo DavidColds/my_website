@@ -269,10 +269,10 @@ jQuery(document).ready(function ($) {
       0: {
         items: 1
       },
-      600: {
+      100: {
         items: 1
       },
-      1000: {
+      1500: {
         items: 1
       }
     }
