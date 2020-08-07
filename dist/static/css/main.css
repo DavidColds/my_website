@@ -575,7 +575,6 @@ Timeline
   background: -o-linear-gradient(top, rgba(213, 213, 213, 0) 0%, rgb(213, 213, 213) 8%, rgb(213, 213, 213) 92%, rgba(213, 213, 213, 0) 100%);
   background: -ms-linear-gradient(top, rgba(213, 213, 213, 0) 0%, rgb(213, 213, 213) 8%, rgb(213, 213, 213) 92%, rgba(213, 213, 213, 0) 100%);
   background: linear-gradient(to bottom, rgba(213, 213, 213, 0) 0%, rgb(213, 213, 213) 8%, rgb(213, 213, 213) 92%, rgba(213, 213, 213, 0) 100%);
-  z-index: 5;
 }
 
 .timeline li {
@@ -1110,13 +1109,23 @@ footer.nb-footer .footer-info-single {
   margin-top: 30px;
 }
 
-footer.nb-footer .footer-info-single .title {
+footer.nb-footer .footer-info-single .title  {
   color: #aaa;
   text-transform: uppercase;
   font-size: 16px;
   border-left: 4px solid #b78c33;
   padding-left: 5px;
 }
+
+footer.nb-footer .footer-info-single .tel  {
+  color: #aaa;
+  text-transform: uppercase;
+  font-size: 16px;
+  border-left: 4px solid #b78c33;
+  padding-left: 5px;
+}
+
+
 
 footer.nb-footer .footer-info-single xl lx a {
   display: block;
@@ -1185,4 +1194,12 @@ PARALLAX SCROLL
   background-size: cover;
   background-attachment: fixed;
   transition: .4s ease-in-out;
+}
+
+/* ============================================================
+Successs.html
+============================================================ */
+.jumbotron{
+  margin-top: 100px;
+  font-family: 'Playfair Display', serif;
 }
