@@ -479,11 +479,14 @@ About Section
 ============================================================= 
 */
 
-.display-3 {
+.display-4 {
   font-family: 'Playfair Display', serif;
   color: #FFB302;
 }
 
+.shadow-effect-about{
+  background-color: rgba(32, 32, 32, 0.575);
+}
 #about {
   font-family: 'Playfair Display', serif;
 
@@ -837,7 +840,8 @@ Projects
 */
 
 .portfolio {
-  padding: 50px;
+padding-top: 50px;
+  padding-right: 50px;
   background: linear-gradient(#131313c9, #fff);
 }
 
@@ -958,7 +962,10 @@ Testimonials
 */
 
 
+.recensioner{
+  font-family: 'Playfair Display', serif;
 
+}
 
 .shadow-effect {
   background: #fff;
