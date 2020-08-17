@@ -489,11 +489,9 @@ About Section
 }
 #about {
   font-family: 'Playfair Display', serif;
-
   background-color: #131313c9;
-  font-size: 25px;
   color: rgb(189, 189, 189);
-  padding: 30px;
+  padding: 20px;
 }
 
 
