@@ -228,7 +228,6 @@ Navbar
 */
 
 .main_h {
-  font-family: 'Playfair Display', serif;
   position: fixed;
   top: 0px;
   max-height: 70px;
@@ -242,6 +241,7 @@ Navbar
   opacity: 0;
   top: -100px;
   padding-bottom: 6px;
+  font-family: "Montserrat", sans-serif;
 }
 
 @media only screen and (max-width: 766px) {
@@ -263,11 +263,10 @@ Navbar
   background-color: rgba(255, 255, 255, 0.93);
   opacity: 1;
   top: 0px;
-  border-bottom: 1px solid #d5ad18;
+  border-bottom: 3px solid #d5ad18;
 }
 
 .logo {
-  width: 50px;
   font-size: 25px;
   color: #8f8f8f;
   text-transform: uppercase;
@@ -314,11 +313,11 @@ nav ul {
     float: left;
     text-align: center;
     width: 100%;
+    padding-right: 22px;
   }
 }
 
 nav ul li {
-  
   display: inline-block;
   margin-left: 35px;
   line-height: 1.5;
@@ -336,13 +335,12 @@ nav ul a {
   text-decoration: none;
   color: #888888;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 17px;
 }
 
 nav ul a:hover{
   color: #b78c33;
   text-transform: uppercase;
-  font-size: 12px;
 } 
 
 .mobile-toggle {
@@ -495,8 +493,9 @@ About Section
 }
 
 
-about-image {
+.about-text{
   padding: 30px;
+  background-color: #131313c9;
 }
 
 
@@ -838,9 +837,9 @@ Projects
 */
 
 .portfolio {
-padding-top: 50px;
+  padding-top: 50px;
   padding-right: 50px;
-  background: linear-gradient(#131313c9, #fff);
+  background: linear-gradient(#fff, #131313c9);
 }
 
 .mna {
@@ -962,6 +961,7 @@ Testimonials
 
 .recensioner{
   font-family: 'Playfair Display', serif;
+  color: #b78c33;
 
 }
 
@@ -1181,19 +1181,19 @@ PARALLAX SCROLL
 .leading-statement {
   color: rgb(192, 192, 192);
   letter-spacing: 1px;
-  text-transform: uppercase;
-  font-size: 60px;
-
   text-align: center;
 }
 
 .statement-01 {
-  font-size: 45px;
+  font-size: 40px;
   padding-top: 12%;
   padding-bottom:  12%;
   font-family: 'Playfair Display', serif;
 
 }
+
+
+
 
 .statement-02 {
   font-size: 55px;
