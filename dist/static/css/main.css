@@ -3,7 +3,12 @@
 General Style
 ============================================================= 
 */
-
+.section-fluid {
+  position: relative;
+  width: 1500px;
+  display: block;
+  margin: 0 auto;
+}
 body,
 html {
   font-family: 'Playfair Display', serif;
@@ -20,6 +25,7 @@ hr {
 * {
   box-sizing: border-box;
 }
+
 
 a {
   text-decoration: none;
@@ -498,7 +504,10 @@ About Section
   background-color: #131313c9;
 }
 
+.uppdrag{
+  padding-bottom: 20px;
 
+}
 
 /*
 ============================================================= 
@@ -1202,9 +1211,7 @@ PARALLAX SCROLL
 
 .parallax-div-01 {
   background: url("https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
-  width: 90%;
-  margin-left: 5%;
-  margin-top: 5%;
+
   height: auto;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1219,3 +1226,6 @@ Successs.html
   margin-top: 100px;
   font-family: 'Playfair Display', serif;
 }
+
+
+
