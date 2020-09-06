@@ -63,7 +63,6 @@ $(function () {
   });
 });
 
-
 jQuery(document).ready(function ($) {
   "use strict";
   //  TESTIMONIALS CAROUSEL HOOK
@@ -89,7 +88,6 @@ jQuery(document).ready(function ($) {
     }
   });
 });
-
 
 // VARIABLES
 const magicalUnderlines = Array.from(document.querySelectorAll('.underline--magical'));
@@ -139,11 +137,6 @@ const applyGradient = async (url, callback) => {
 
 // RESULT
 applyGradient(gradientAPI, addBackgroundToUnderlines);
-
-
-
-
-
 
 var ml12 = {};
 ml12.opacityIn = [0, 1];
@@ -220,43 +213,28 @@ anime.timeline({
     duration: 1200,
     delay: (el, i) => 100 + 30 * i
   });
-
-
-jQuery(document).ready(function ($) {
-  "use strict";
-  //  TESTIMONIALS CAROUSEL HOOK
-  $('#customers-testimonials').owlCarousel({
-    loop: true,
-    center: true,
-    items: 3,
-    margin: 0,
-    autoplay: true,
-    dots: true,
-    autoplayTimeout: 8500,
-    smartSpeed: 450,
-    responsive: {
-      0: {
-        items: 1
-      },
-      100: {
-        items: 1
-      },
-      1500: {
-        items: 1
-      }
-    }
+  jQuery(document).ready(function($) {
+    "use strict";
+    //  TESTIMONIALS CAROUSEL HOOK
+    $('#customers-testimonials').owlCarousel({
+        loop: true,
+        center: true,
+        items: 3,
+        margin: 0,
+        autoplay: true,
+        dots:true,
+        autoplayTimeout: 8500,
+        smartSpeed: 450,
+        responsive: {
+          0: {
+            items: 1
+          },
+          768: {
+            items: 2
+          },
+          1170: {
+            items: 3
+          }
+        }
+    });
   });
-});
-
-
-
-$(document).ready(function () {
-  // AOS Transition Time
-  AOS.init({
-    duration: 1200,
-  })
-});
-
-
-
-
