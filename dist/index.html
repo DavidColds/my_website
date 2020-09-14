@@ -27,18 +27,19 @@
     <link rel="mask-icon" href="favicon.ico/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet"
-        href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+
+    <link type="text/css" rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/froala-design-blocks/2.0.1/css/froala_blocks.min.css">
     <!-- Main CSS -->
     <link rel="stylesheet" href="static/css/main.css" type="text/css">
-    <link rel="stylesheet" href="static/css/stars.css" type="text/css">
     <!-- Testimonials -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/assets/owl.carousel.min.css">
     <!-- Font family -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
     <!-- Bootstrap CSS -->
@@ -67,33 +68,46 @@
 </head>
 
 <body style="padding-right: 0px; ">
-    <div id="particles-js"></div>
-
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
     <!--
     ============================================================= 
     Nav
     ============================================================= 
     -->
-    <header class="main_h">
-        <div class="row">
-            <a class="logo" href="#up">IT/Nordik</a>
-
-            <div class="mobile-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-
-            <nav>
-                <ul>
-                    <li><a href="#about">Om oss</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#tjänster">Tjänster</a></li>
-                    <li><a href="#kontakt">Kontakt</a></li>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light white">
+        <div class="container">
+            <a class="navbar-brand waves-effect" href="#up">
+                <img src="/static/img2/itnordik.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link waves-effect" href="#omoss">Om Oss</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link waves-effect" href="kundcase.html">Kundcase</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link waves-effect" href="webbproduktion.html">Vad vi gör</a>
+                    </li>
                 </ul>
-            </nav>
+                <ul class="navbar-nav nav-flex-icons">
+                    <li class="nav-item">
+                        <a href="kontakt.html" class="nav-link active border border-light rounded waves-effect mr-2">
+                            <i class="active"></i>Kontakta oss
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </header>
+    </nav>
+
 
     <!--
     ============================================================= 
@@ -104,51 +118,25 @@
 
     </div>
 
-    <header>
-        <div id="intro-section" class="view">
-            <div id="fadein-trigger" class="rgba-gradient">
-                <div class="container-fluid my-5">
-                    <!--Section: Content-->
-                    <section class="dark-grey-text">
-                        <div class="row pr-lg-5">
-                            <div class="col-md-12 mb-4">
-                                <h1 id="fade" class="heading1  animate__animated animate__fadeInUpBig">
-                                    Vi bygger
-                                </h1>
-                                <h1 class="heading ml12">
-                                    <span class="letters letters-1">Coola</span>
-                                    <span class="letters letters-2">Stiliga</span>
-                                    <span class="letters letters-3">Spännande!</span>
-                                    <span class="letters letters-4">Unika</span>
-                                </h1>
-                                <h1 class="heading3 animate__animated animate__fadeInLeft">
-                                    Hemsidor
-                                </h1>
-                            </div>
-                        </div>
-                    </section>
-                    <div class="col-md-5 d-flex align-items-center float-right ">
-                        <div>
+    <section class="fdb-block ">
+        <div class="container align-items-center justify-content-center d-flex">
+            <div class="row align-items-center text-left">
+                <div class="col-12 col-sm-6">
+                    <img alt="image" class="img-fluid" src="/static/img2/developer-dribbble.gif">
+                </div>
+                <div id="omoss">
 
-                            <h1 class="subheading">Redo att ta er digitala resa <span class="underline"
-                                    style="color: #ffbf00;">to the next level?</span>
-                                Kontakta oss så visar vi
-                                hur era visioner och mål tar plats i den digitala galaxen.
-                            </h1>
-
-
-
-
-                            <a href="#kontakt">
-                                <button type="button" class="btn btn-white btn-rounded mx-0">Let's GO!</button>
-
-                            </a>
-                        </div>
-                    </div>
+                </div>
+                <div class="col-12 col-lg-5 ml-auto pt-5 pt-lg-0">
+                    <h1 class="title-text">Developing your success online</h1>
+                    <p class="lead">Redo att ta er digitala resa <strong>to the next level?</strong> kontakta oss så
+                        visar vi hur era visioner och mål tar plats i den digitala galaxen</p>
+                    <p class="mt-4"><a href="kontakt.html" class="btn btn-secondary">Let's GO!</a></p>
                 </div>
             </div>
         </div>
-    </header>
+    </section>
+
 
 
 
@@ -158,351 +146,361 @@
     ============================================================= 
     -->
 
-    <section id="about">
-        <div class="container-fluid shadow-effect-about">
-            <section class="white-grey-text">
-
-                <div class="row">
-
-                    <div class="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center">
-                        <div class="about-text">
-
-                            <h1 class="display-4" data-aos="fade-up">
-                                Om ITnordik
-                                <i class="fas fa-heart"> </i>
-                            </h1>
-
-                            <h4>
-                                ITnordik är en webbyrå med kontor i Åkers Styckebruk och verksamhet i hela landet.
-                                Med rötterna i webbutveckling, design och
-                                marknadsföring kan vi erbjuda och skapa unika designade hemsidor åt företag som vill
-                                känna stolthet i sin digitala identitet.
-
-                            </h4>
-
-                            <hr>
-
-                            <h4>
-
-                                Vi älskar tillväxt och brinner för att tillsammans hitta nya sätt att skapa värde.
-                                <hr>
-                                Hjärtat i vårt företag är att alltid sträva vidare mot nya höjder.
-                                Inget projekt är för litet eller för stort. Inget uppdrag är omöljgt!
-
-                            </h4>
-
-                            <br>
-                            <a href="#kontakt">
-                                <button type="button" class="btn btn-white btn-rounded mx-0"> Kontakta oss, så berättar
-                                    vi
-                                    mer.
-                                </button>
-                            </a>
-
-                        </div>
-                    </div>
 
 
+    <section id="about" class="s-about">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col col-md-8 text-center">
+                    <h1 class="display-2" data-aos="fade-up">We are <br> ITnordik</h1>
+                    <p class="about-text" data-aos="fade-up ">ITnordik är en webbyrå med kontor i Åkers Styckebruk och
+                        verksamhet i hela landet. Med rötterna i webbutveckling, design och marknadsföring kan vi
+                        erbjuda och skapa unika designade hemsidor åt företag som vill känna stolthet i sin digitala
+                        identitet.
+                        Vi älskar tillväxt och brinner för att tillsammans hitta nya sätt att skapa värde.
+                        Hjärtat i vårt företag är att alltid sträva vidare mot nya höjder. Inget projekt är för litet
+                        eller för stort. Inget uppdrag är omöljgt!</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
-                    <div class="col-md-6 d-flex align-items-center">
+    <!--
+    ============================================================= 
+    3 main skils
+    ============================================================= 
+-->
 
-                        <div class="view about-image">
-                            <img src="https://images.unsplash.com/photo-1534665482403-a909d0d97c67?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
-                                class="img-fluid" alt="itnordik">
-                        </div>
+    <div id="tjänster">
 
-                    </div>
+    </div>
+    <section class="fdb-block">
+        <div class="container">
+            <div class="row justify-content-center pb-xl-5">
+                <div class="col-12 col-md-8 text-center" data-aos="fade-up">
+                    <h1 class="title-text">What We Do
+                    </h1>
+                    <p class="lead">Vi skapar unikt designade hemsidor åt företag som vill känna stolthet i sin digitala
+                        identitet.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row text-right align-items-center-lg align-items-end pt-5">
+                <div class="col-7 col-sm-4 m-auto mb-md-0 mt-md-0 m-lg-auto">
+                    <img alt="image" class="img-fluid" data-aos="fade-up" src="/static/img2/responsive.gif">
                 </div>
 
-            </section>
+                <div class="col-12 col-md-7 col-lg-6 col-xl-5 m-auto text-left pt-5 pt-md-0">
+
+                    <h3><strong data-aos="fade-up" class="title-text">Märkesidentitet</strong></h3>
+                    <p class="lead">Märkesidentitet gör det lättare för kunder att känna igen dig och komma ihåg ditt
+                        företag via Google.
+                        När potentiella kunder vill köpa en produkt eller tjänst börjar 95% av dem leta på Google först
+                        och där jämföra
+                        olika företag som levererar den produkten eller tjänsten.
+                    </p>
+                    <a class='animated-arrow' href='webbproduktion.html'>
+                        <span class='the-arrow -left'>
+                            <span class='shaft'></span>
+                        </span>
+                        <span class='main'>
+                            <span class='text'>
+                                Explore More
+                            </span>
+                            <span class='the-arrow -right'>
+                                <span class='shaft'></span>
+                            </span>
+                        </span>
+                    </a>
+
+                    <h3 class="mt-4 mt-xl-5 title-text"><strong data-aos="fade-up">Webbdesign</strong></h3>
+                    <p class="lead"> Med strategi och passion inom webbdesign som refleter företagets bild och atmosfär
+                        med hjälp av
+                        Html. Css, JavaScript och Vue.js Ramverk och professionella verktyg som du inte behöver betala
+                        månadsvis!
+                    </p>
+
+
+
+                    <a class='animated-arrow' href='webbproduktion.html'>
+                        <span class='the-arrow -left'>
+                            <span class='shaft'></span>
+                        </span>
+                        <span class='main'>
+                            <span class='text'>
+                                Explore More
+                            </span>
+                            <span class='the-arrow -right'>
+                                <span class='shaft'></span>
+                            </span>
+                        </span>
+                    </a>
+
+
+
+                    <h3 class="mt-4 mt-xl-5 title-text"><strong data-aos="fade-up">Webbutveckling</strong></h3>
+                    <p class="lead">Vi tar er webbproduktion hela vägen från idé till lanserad webbplats genom en smidig
+                        och beprövad process.
+                        Med design och teknik i perfekt harmoni får vi era budskap att nå fram till rätt mottagare både
+                        snyggt och säkert.</p>
+
+
+                    <a class='animated-arrow' href='webbproduktion.html'>
+                        <span class='the-arrow -left'>
+                            <span class='shaft'></span>
+                        </span>
+                        <span class='main'>
+                            <span class='text'>
+                                Explore More
+                            </span>
+                            <span class='the-arrow -right'>
+                                <span class='shaft'></span>
+                            </span>
+                        </span>
+                    </a>
+
+                </div>
+            </div>
 
         </div>
     </section>
 
 
-
-
-
-
-    <div id="fadeout-trigger">
-
-
-
-
-
-
-        <!--
+    <!--
     ============================================================= 
     Projects
     ============================================================= 
     -->
 
-        <div id="portfolio">
+    <div id="kundcase">
+
+    </div>
+    <section class="s-about">
+        <div class="container">
+            <div class="text-center">
+                <h1 class="display-4 title-text-2" data-aos="fade-up">Webbproduktioner och designuppdrag</h1>
+                <p class="font-italic text-muted mb-0">We believe brands are the cultural connection between companies
+                    and their communities.
+                    We help them work together to elevate the brand experience and ensure that it becomes impossible to
+                    forget.</p>
+            </div>
         </div>
+        <div class=" container my-5">
 
+            <div class="py-5">
+                <div class="row">
+                    <div class="col-lg-6 mb-3 mb-lg-0">
+                        <div class="hover hover-4 text-white rounded">
 
-         <!--
-    ============================================================= 
-    Projects
-    ============================================================= 
-    -->
+                            <img src="/static/img2/alma.jpg" alt="">
+                            <a href="almabygg.html">
+                                <div class="hover-overlay"></div>
+                                <div class="hover-4-content">
 
-    <div id="portfolio">
-    </div>
+                            </a>
 
-
-    <div class="container my-5 py-5">
-
-        <section class=" container shadow-effect" data-aos="fade-down">
-            <h3 class="display-4"> Uppdrag </h3>
-        </section>
-
-        <section class="px-md-5 mx-md-5 dark-grey-text text-center text-lg-left shadow-effect"
-            data-aos="fade-right">
-            <div class="row">
-                <div class="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center imagemodule">
-                    <img src="static/img/pic1.jpg" class="img-fluid" alt="itnordik">
-                </div>
-                <div class="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center">
-
-                    <div class="mna">
-                        <h1 class="xlarge-font" style="color: #d5ad18;"><b>MNA Transport</b></h1>
-                        <p>
-                            <span style="font-size:36px"> Med över 1200 st. leveranser varje dag,
-                            </span>
-                            <p style="color: black;">
-                                MNA Transport & Service AB är ett svenskt transportföretag i
-                                Stockholm som startade upp sin verksamhet i augusti 2016 och som har haft ett hög
-                                tillväxt
-                                och
-                                vi är stolta över vad vi har åstadkommit
-                            </p>
-                        </p>
-                        <a href="https://www.transportmna.se/" target="blank">
-                            <button class="button">transportmna.se</button>
-                        </a>
+                            <h3 class="hover-4-title text-uppercase font-weight-bold mb-0"><span
+                                    class="font-weight-light">ALMA </span>service</h3>
+                            <p class="hover-4-description text-uppercase mb-0 small">Projektledning <br>
+                                webbdesign <br> SEO Struktur </p>
+                        </div>
                     </div>
                 </div>
-        </section>
-        <hr>
-
-        <section class="px-md-5 mx-md-5 dark-grey-text text-center text-lg-right shadow-effect"
-            data-aos="fade-left">
-            <div class="row">
-                <div class="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center">
-                    <div class="tattoo">
-                        <h1 class="xlarge-font" style="color: #d5ad18;"><b>Cecilia Pisano</b></h1>
-                        <p>
-                            <span style="font-size:36px">Tattoo artist and painter,</span>
-
-                            <p>
-                                Cecilia is also an activist, a nature lover and light worker,
-                                a spiritual student, a mysticist, and a fighter for the people as well a strong
-                                believer
-                                in
-                                unity. She comes from the suburbs of
-                                Stockholm Sweden, where she started her tattoo career since 2012.
-                            </p>
-
-                        </p>
-                        <a href="https://www.pisanoarts.com/" target="blank">
-                            <button class="button">PisanoArts.com</button>
+                <div class="col-lg-6">
+                    <div class="hover hover-4 text-white rounded"><img src="/static/img2/pic1.jpg" alt="">
+                        <a href="mna.html">
+                            <div class="hover-overlay"></div>
+                            <div class="hover-4-content">
                         </a>
+
+
+                        <h3 class="hover-4-title text-uppercase font-weight-bold mb-0"><span
+                                class="font-weight-light">mna </span>transport</h3>
+                        <p class="hover-4-description text-uppercase mb-0 small">Projektledning <br>
+                            webbdesign <br> SEO Struktur <br> Logotyp</p>
                     </div>
-                </div>
-                <div class="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center imagemodule">
-                    <img src="static/img/pic3.jpg" class="img-fluid" alt="itnordik">
-                </div>
-        </section>
-
-        <hr>
-
-        <section class="px-md-5 mx-md-5 dark-grey-text text-center text-lg-left shadow-effect "
-            data-aos="fade-right">
-            <div class="row">
-                <div class="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center imagemodule">
-                    <img src="static/img/pic2.jpg" class="img-fluid" alt="itnordik">
-                </div>
-                <div class="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center">
-
-                    <div class="salon  ">
-                        <h1 class="xlarge-font" style="color: #d5ad18;"><b>PetitSalon</b></h1>
-                        <span style="font-size:36px"> En professionell hudvårdssalong i Stockholm,
-                        </span>
-                        <p>
-                            som välkomnar dig till en harmonisk miljö där vi tar hand om dig och din hud på bästa
-                            möjliga sätt
-                            Här kan du vara trygg, koppla av och glömma bort vardagens stress. Vi erbjuder
-                            personliga
-                            behandlingar med produkter och tjänster av bästa kvalitet.
-                        </p>
-                        <a href="https://lepetitsalon.se/" target="blank">
-                            <button class="button">LePetitSalon.se</button>
-                        </a>
-                    </div>
-                </div>
-        </section>
-    </div>
-
-
-        <section id="01" class="container">
-            <div class="parallax-div parallax-div-01">
-                <div class="leading-statement statement-01 mask rgba-black-strong">
-                    <p>
-
-                        <p data-aos="fade-up" data-aos-anchor-placement="top-bottom">Take your business to
-                            <span class="underline--magical ml10" style="color: #ffbf00;">the next level!</span>
-                            <br> We will create
-                            websites your business so you can focus on getting your clients
-                            <span class="underline--magical " style="color: #ffbf00;">happier!
-                            </span>
-                        </p>
                 </div>
             </div>
-        </section>
+        </div>
+
+        </div>
+
+        </div>
+        <div class="text-center">
+
+            <a class='animated-arrow' href='kundcase.html'>
+                <span class='the-arrow -left'>
+                    <span class='shaft'></span>
+                </span>
+                <span class='main'>
+                    <span class='text'>
+                        Explore More
+                    </span>
+                    <span class='the-arrow -right'>
+                        <span class='shaft'></span>
+                    </span>
+                </span>
+            </a>
+        </div>
+
+    </section>
 
 
 
 
-        <!--
+    <!--
     ============================================================= 
-    How can I help
+    Call to action
     ============================================================= 
     -->
 
-        <br>
-        <div id="tjänster">
+    <section class="fdb-block">
+        <div class="container">
+            <div class="row align-items-center text-left">
+                <div class="col-12 col-md-8">
+                    <h1>Ideas as absolute as space!</h1>
+                    <p class="lead">
+                        Take your business to the next level! We will create
+                        websites your business so you can focus on getting your clients happier!
+                    </p>
+                </div>
+            </div>
 
-
-            <section class=" container text-center dark-grey-text tjänster shadow-effect" data-aos="fade-down">
-
-                <h3 class="font-weight-bold ">Hur vi kan hjälpa dig </h3>
-
-                <h5>
-                    Vi skapar
-                    <strong>
-                        unikt designade
-                    </strong>
-
-                    hemsidor åt företag som vill känna stolthet i
-                    sin
-
-                    <strong>
-                        digitala identitet.
-
-                    </strong>
-
-                    En genomtänkt hemsida ger er möjlighet att bygga
-                    upp er
-
-                    <strong>
-                        egna story,
-
-                    </strong>
-
-                    visa upp er från er bästa sida och skapa en röd tråd genom
-                    hela er
-                    <strong>
-                        marknadsföring
-                    </strong>
-
-
-                    Självklart med genomtänkt strategi för innehåll, SEO och konvertering.
-                    Självklart med lättanvänd teknik och support.
-
-                </h5>
-
-                <a class="btn btn-white btn-md ml-0 mb-5" href="#kontakt" role="button">Kontakta oss!<i
-                        class="fa fa-heart ml-2"></i></a>
-
-            </section>
+            <div class="col-auto text-right">
+                <a class="btn btn-outline-secondary" href="kontakt.html">Starta nytt projekt!</a>
+            </div>
         </div>
+        <div id="js-rocket" data-aos="fade-up" data-aos-duration="3000">
+            <?xml version="1.0" encoding="UTF-8"?>
+            <svg width="477px" height="549px" viewBox="0 0 477 549" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-1">
+                        <stop stop-color="#0CB2E2" offset="0%"></stop>
+                        <stop stop-color="#4FC0B0" offset="100%"></stop>
+                    </linearGradient>
+                    <linearGradient x1="50%" y1="0%" x2="50%" y2="99.6929191%" id="linearGradient-2">
+                        <stop stop-color="#11B3DE" offset="0%"></stop>
+                        <stop stop-color="#D8D8D8" stop-opacity="0" offset="100%"></stop>
+                    </linearGradient>
+                    <linearGradient x1="100%" y1="100%" x2="100%" y2="0%" id="linearGradient-3">
+                        <stop stop-color="#0CB2E2" offset="0%"></stop>
+                        <stop stop-color="#4FC0B0" offset="100%"></stop>
+                    </linearGradient>
+                </defs>
+                <g id="Landing-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Landing" transform="translate(-1022.000000, -1486.000000)">
+                        <g id="Rocket-Illustration" transform="translate(1022.000000, 1486.000000)">
+                            <g id="rocket-01" transform="translate(171.000000, 0.000000)">
+                                <path
+                                    d="M79.7266842,0 C21.0677259,70.8293925 7.03751832,168.40158 48.352602,259.447674 L108.633142,259.447674 C147.480601,163.648882 135.706507,59.8343441 79.7266842,0 Z"
+                                    id="Path" stroke="#E2E2E2" fill="#F3F3F3"></path>
+                                <ellipse id="Oval" fill="url(#linearGradient-1)" cx="77.1789474" cy="92.248062"
+                                    rx="24.6315789" ry="24.7093023"></ellipse>
+                                <path
+                                    d="M127.785996,191.908915 C124.395386,211.396638 119.874571,230.102007 113.305263,247.776091 C131.282564,255.919683 141.419077,273.913822 153.674722,314.631783 C159.290421,247.74053 156.21768,218.082207 127.785996,191.908915 Z"
+                                    id="Path" fill="url(#linearGradient-1)"></path>
+                                <path
+                                    d="M27.3587209,191.908915 C30.3837149,211.224427 35.6950415,229.899646 42.6947368,247.756713 C24.7909935,255.902665 14.6959555,273.902019 2.49045665,314.631783 C-3.1374391,247.685569 -0.956629496,218.054221 27.3587209,191.908915 Z"
+                                    id="Path" fill="url(#linearGradient-1)"></path>
+                                <path
+                                    d="M51.7263158,259.447674 L104.273684,259.447674 L101.04374,267.871788 C85.8664765,271.908343 71.0365186,272.118946 56.5885971,267.871788 L51.7263158,259.447674 Z"
+                                    id="Path" fill="#444444"></path>
+                                <path
+                                    d="M74.6128466,191.933831 C69.9017068,234.60055 70.9643699,275.594761 78.7218105,314.631783 C84.2476586,271.609212 85.8062311,230.40149 82.0514882,191.684735 C80.7054483,182.041131 76.8444391,182.076716 74.6128466,191.933831 Z"
+                                    id="Path" fill="url(#linearGradient-1)"></path>
+                                <path
+                                    d="M59.194048,272.827586 C73.8345836,275.255963 87.4861812,275.371971 100,272.827586 L95,439.039005 L64.194048,439.039005 L59.194048,272.827586 Z"
+                                    id="flame" fill="url(#linearGradient-2)"></path>
+                            </g>
+                            <g id="particles" transform="translate(0.000000, 168.000000)" fill="url(#linearGradient-1)">
+                                <ellipse id="Oval" cx="89.6431034" cy="50.2915361" rx="5.75689655" ry="5.77115987">
+                                </ellipse>
+                                <ellipse id="Oval-Copy" cx="78.1293103" cy="103.056426" rx="5.75689655" ry="5.77115987">
+                                </ellipse>
+                                <ellipse id="Oval-Copy-10" cx="4.93448276" cy="187.974922" rx="4.93448276"
+                                    ry="4.94670846">
+                                </ellipse>
+                                <ellipse id="Oval-Copy-11" cx="358.572414" cy="152.523511" rx="4.93448276"
+                                    ry="4.94670846">
+                                </ellipse>
+                                <ellipse id="Oval-Copy-14" cx="159.548276" cy="207.761755" rx="4.93448276"
+                                    ry="4.94670846">
+                                </ellipse>
+                                <ellipse id="Oval-Copy-12" cx="342.946552" cy="4.94670846" rx="4.93448276"
+                                    ry="4.94670846">
+                                </ellipse>
+                                <ellipse id="Oval-Copy-13" cx="419.431034" cy="144.278997" rx="4.93448276"
+                                    ry="4.94670846">
+                                </ellipse>
+                                <ellipse id="Oval-Copy-5" cx="86.7646552" cy="138.920063" rx="2.87844828"
+                                    ry="2.88557994">
+                                </ellipse>
+                                <ellipse id="Oval-Copy-9" cx="121.306034" cy="223.014107" rx="2.87844828"
+                                    ry="2.88557994">
+                                </ellipse>
+                                <ellipse id="Oval-Copy-6" cx="134.464655" cy="85.330721" rx="2.87844828"
+                                    ry="2.88557994">
+                                </ellipse>
+                                <ellipse id="Oval-Copy-7" cx="383.656034" cy="191.684953" rx="2.87844828"
+                                    ry="2.88557994">
+                                </ellipse>
+                                <ellipse id="Oval-Copy-8" cx="474.121552" cy="260.11442" rx="2.87844828"
+                                    ry="2.88557994">
+                                </ellipse>
+                                <ellipse id="Oval-Copy-2" cx="467.953448" cy="84.9184953" rx="5.75689655"
+                                    ry="5.77115987">
+                                </ellipse>
+                                <ellipse id="Oval-Copy-4" cx="467.953448" cy="183.028213" rx="5.75689655"
+                                    ry="5.77115987">
+                                </ellipse>
+                                <ellipse id="Oval-Copy-3" cx="386.534483" cy="56.0626959" rx="5.75689655"
+                                    ry="5.77115987">
+                                </ellipse>
+                            </g>
+                            <g id="speed" transform="translate(137.000000, 31.000000)" fill="url(#linearGradient-3)">
+                                <rect id="Rectangle" opacity="0.65" x="0" y="-395" width="7" height="252" rx="3.5">
+                                </rect>
+                                <rect id="Rectangle-Copy-4" opacity="0.148277" x="233" y="-395" width="7" height="362"
+                                    rx="3.5"></rect>
+                                <rect id="Rectangle-Copy-3" opacity="0.6" x="168" y="-395" width="7" height="362"
+                                    rx="3.5">
+                                </rect>
+                                <rect id="Rectangle-Copy-5" opacity="0.6" x="18" y="-395" width="7" height="362"
+                                    rx="3.5">
+                                </rect>
+                                <rect id="Rectangle-Copy-6" opacity="0.4" x="150" y="-395" width="7" height="362"
+                                    rx="3.5">
+                                </rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </div>
+        </div>
+    </section>
 
-        <ul class="timeline">
-            <!-- Item 1 -->
-            <li>
-                <div class="direction-r " data-aos="fade-up-left">
-                    <div class="flag-wrapper">
-                        <span class="hexa"></span>
-                        <span class="time-wrapper"><span class="time">Unik Modern Responsive Design</span></span>
-                    </div>
-                </div>
-            </li>
 
-            <!-- Item 2 -->
-            <li>
-                <div class="direction-l" data-aos="fade-up-right">
-                    <div class="flag-wrapper">
-                        <span class="hexa"></span>
-                        <span class="time-wrapper"><span class="time">Genomtänkt struktur för SEO och konvertering
-
-                    </div>
-                </div>
-            </li>
-
-            <!-- Item 3 -->
-            <li>
-                <div class="direction-r">
-                    <div class="flag-wrapper" data-aos="fade-up-left">
-                        <span class="hexa"></span>
-                        <span class="time-wrapper"><span class="time">-Foto- & videoproduktion <br>-Illustrationer +
-                                grafiska element</span></span>
-
-                        </span></span>
-                    </div>
-                </div>
-            </li>
-
-            <li>
-                <div class="direction-l">
-                    <div class="flag-wrapper" data-aos="fade-up-right">
-                        <span class="hexa"></span>
-                        <span class="time-wrapper"><span class="time">Teknisk webbproduktion och säker
-                                drift</span></span>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="direction-r">
-                    <div class="flag-wrapper" data-aos="fade-up-left">
-                        <span class="hexa"></span>
-                        <span class="time-wrapper"><span class="time"> Marknadsföring content creator
-
-                            </span></span>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="direction-l">
-                    <div class="flag-wrapper" data-aos="fade-up-right">
-                        <span class="hexa"></span>
-                        <span class="time-wrapper"><span class="time">Support, underhåll och vidareutveckling
-                            </span></span>
-                    </div>
-                </div>
-            </li>
-
-        </ul>
-
-
-
-
-        <!--
+    <!--
     ============================================================= 
     Testimonials
     ============================================================= 
     -->
 
 
-        <section class=" container text-center recensioner shadow-effect" data-aos="fade-down">
-            <h3 class="font-weight-bold ">Recensioner </h3>
-        </section>
+    <section class="fdb-block" style="background-image: url(/dist/imgs/shapes/9.svg)">
+        <div class="container">
+            <div class="row text-center justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7" data-aos="fade-down">
+                    <h1 class="title-text">Referenser</h1>
+                    <p class="lead">Lite kärlek från våra nöjda kunder</p>
+                </div>
+            </div>
 
-
-        <!-- TESTIMONIALS -->
-        <section class="testimonials">
-            <div class="container">
+            <section class="testimonials">
                 <div class="row">
                     <div class="col-sm-12">
                         <div id="customers-testimonials" class="owl-carousel">
@@ -519,8 +517,6 @@
                                 </div>
                                 <div class="testimonial-name">Ruxandra, LePetitSalon VD </div>
                             </div>
-                            <!--END OF TESTIMONIAL 1 -->
-                            <!--TESTIMONIAL 2 -->
                             <div class="item">
                                 <div class="shadow-effect">
 
@@ -535,8 +531,6 @@
                                 </div>
                                 <div class="testimonial-name">Iulia</div>
                             </div>
-                            <!--END OF TESTIMONIAL 2 -->
-                            <!--TESTIMONIAL 3 -->
                             <div class="item">
                                 <div class="shadow-effect">
 
@@ -549,191 +543,140 @@
                                 </div>
                                 <div class="testimonial-name">Andreas Larsson</div>
                             </div>
-                            <!--END OF TESTIMONIAL 3 -->
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- END OF TESTIMONIALS -->
-
-
-
-
-
-        <!--
-    ============================================================= 
-    Contact
-    ============================================================= 
-    -->
-
-        <div id="kontakt"> </div>
-
-
-        <div class="container module my-5 py-5 z-depth-1">
-
-            <section class="text-center px-md-5 mx-md-5 white-text">
-
-                <!-- Section heading -->
-                <h3 class="font-weight-bold mb-4">Kontakta Oss!</h3>
-                <!-- Section description -->
-
-                <div class="row">
-                    <div class="col-md-12 mb-md-0 mb-5">
-
-                        <form action="success.html" name="contact" method="POST" data-netlify="true">
-
-                            <div class="row">
-
-                                <div class="col-md-6" data-aos="zoom-in-up">
-                                    <div class="md-form mb-0">
-                                        <input input type="text" name="name" class="form-control text-white" required>
-                                        <label for="contact-name" class="">Namn</label>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6" data-aos="zoom-in-up">
-                                    <div class="md-form mb-0">
-                                        <input input type="email" name="email" class="form-control text-white" required>
-                                        <label for="contact-email" class="">Email</label>
-                                    </div>
-                                </div>
-
-                            </div>
-
-
-                            <div class="row">
-
-                                <div class="col-md-12" data-aos="zoom-in-up">
-                                    <div class="md-form">
-                                        <textarea id="contact-message" name="message"
-                                            class="form-control md-textarea text-white" rows="4"></textarea>
-                                        <label for="contact-message">Ditt meddelandet</label>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="text-center text-md-center" data-aos="zoom-in-down">
-                                <button type="submit" class="btn btn-outline-warning waves-effect">Skicka<i
-                                        class="far fa-heart ml-2"></i></button>
-                            </div>
-                        </form>
-
-
-                    </div>
-                </div>
-            </section>
         </div>
 
-
-        <footer class="nb-footer">
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="about">
-
-                            <div class="social-media">
-                                <xl class="list-inline">
-                                    <lx><a href="https://www.facebook.com/David-Webbyr%C3%A5-108233977580932"
-                                            target="blank" title=""><i class="fab fa-facebook-square"></i></a></lx>
+    </section>
 
 
-                                    <lx><a href="https://www.linkedin.com/in/daviddrughi/" target="blank" title=""><i
-                                                class="fab fa-linkedin"></i></a>
-                                    </lx>
-                                </xl>
-                            </div>
+    <footer class="fdb-block footer-large bg-dark">
+        <div class="container">
+            <div class="row align-items-top text-center">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-sm-left">
+                    <h3><strong class="title-text-2">ITnordik</strong></h3>
+                    <hr class="lighten-5 accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
 
+                    <div class="nav flex-column">
+                        <a class="nav-link" href="index.html">Hem</a>
+                        <a class="nav-link" href="#about">Om oss</a>
+                        <a class="nav-link" href="kundcase.html">Kundcase</a>
+                        <a class="nav-link" href="webbproduktion.html">Vad vi gör</a>
+                        <a class="nav-link" href="kontakt.html">kontakt</a>
 
-                            <div class="footer-info-single">
-                                <xl class="list-unstyled">
-                                    <lx><a href="#about" title=""><i class="fa fa-angle-double-right title"></i> Om
-                                            Oss</a>
-                                    </lx>
-
-                                    <lx><a href="#portfolio" title=""><i class="fa fa-angle-double-right title"></i>
-                                            Portfolio</a></lx>
-
-                                    <lx><a href="#tjänster" title=""><i class="fa fa-angle-double-right title"></i>
-                                            Tjänster</a>
-                                    </lx>
-
-                                    <lx><a href="#kontakt" title=""><i class="fa fa-angle-double-right title"></i>
-                                            Kontaka oss</a></lx>
-
-                                    <lx><a href="tel:+46720211998" title=""><i
-                                                class="fa fa-angle-double-right title"></i> Ring oss här!</a></lx>
-                                </xl>
-                            </div>
-
-                        </div>
                     </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-5 mt-sm-0 text-sm-left">
+                    <h3><strong>Utveckling</strong></h3>
+                    <hr class="lighten-5 accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+
+                    <div class="nav flex-column">
+                        <a class="nav-link" href="webbproduktion.html#webbstrategi">Webbstrategi</a>
+                        <a class="nav-link" href="webbproduktion.html#utveckling">Utveckling</a>
+                        <a class="nav-link" href="webbproduktion.html#seo">SEO-analys</a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3 text-md-left mt-5 mt-md-0">
+                    <h3><strong>Om Oss</strong></h3>
+                    <hr class="lighten-5 accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+
+                    <p>ITnordik hjälper nystartade och mindre företag att växa. Vi hjälper till med moderna webb &
+                        design lösningnar med fokus på tillväxt.</p>
+                </div>
+
+                <div class="col-12 col-lg-2 ml-auto text-lg-left mt-4 mt-lg-0">
+                    <h3><strong>Följ oss på </strong></h3>
+                    <p class="lead">
+                        <a href="https://www.facebook.com/itnordik" target="blank" class="mx-2"><i
+                                class="fab fa-facebook" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/company/it-nordik" target="blank" class="mx-2"><i
+                                class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    </p>
                 </div>
             </div>
 
-            <section class="copyright">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <p>Copyright © 2020 IT/Nordik.</p>
-                        </div>
-                        <div class="col-sm-6"></div>
-                    </div>
+            <div class="row mt-3">
+                <div class="col text-center">
+                    © 2020 ITnordik:All Rights Reserved
                 </div>
-            </section>
-        </footer>
+            </div>
+        </div>
+    </footer>
 
 
 
-        <!-- jQuery -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-        </script>
-        <!-- EndjQuery -->
-        <!-- Anime JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-        <!-- End Anime JS -->
-        <!-- Testimonials -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js"
-            crossorigin="anonymous">
-        </script>
-        <!-- End Testimonials -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
 
-        <!-- Bootstrap -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-        </script>
 
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-        </script>
-        <!-- End Bootstrap -->
+    <!-- EndjQuery -->
+    <!-- Anime JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <!-- End Anime JS -->
+    <!-- Testimonials -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js" crossorigin="anonymous">
+    </script>
+    <!-- End Testimonials -->
 
-        <!-- Particles -->
-        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-        <!-- end Particles -->
+    <!-- Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <!-- End Bootstrap -->
 
-        <!-- Aos -->
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <!-- End Aos -->
-        <!-- Bootstrap tooltips -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js">
-        </script>
-        <!-- Bootstrap core JavaScript -->
-        <script type="text/javascript"
-            src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-        <!-- MDB core JavaScript -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js">
-        </script>
-        <script>
-            AOS.init({
-                duration: 1200,
-            });
-        </script>
-        <script type="text/javascript" src="static/js/main.js"></script>
-        <script type="text/javascript" src="static/js/stars.js"></script>
+    <!-- Particles -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- end Particles -->
+
+    <!-- Aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- End Aos -->
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js">
+    </script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js">
+    </script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/3.2.1/js/froala_editor.min.js"> </script>
+    <script>
+        AOS.init({
+            duration: 1200,
+        });
+    </script>
+    <script>
+        var navMenu = $('nav');
+        var scrollTop = 0;
+
+        $(window).scroll(function (event) {
+
+            if ($(window).scrollTop() > 400) {
+
+                var newScrollTop = $(this).scrollTop();
+
+                if (scrollTop < newScrollTop) {
+                    navMenu.fadeOut(200);
+                } else {
+                    navMenu.fadeIn(200)
+                }
+
+                scrollTop = newScrollTop;
+
+            }
+
+        });
+    </script>
+    <script type="text/javascript" src="static/js/main.js"></script>
+
 </body>
 
 </html>
