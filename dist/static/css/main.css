@@ -41,6 +41,9 @@ a {
 Navbar
 ============================================================= 
 */
+.navbar {
+  background-color: #eeeeeec7;
+}
 
 .navbar .navbar-brand img {
   height: 50px;
@@ -271,7 +274,8 @@ tjanster
   font-family: 'Playfair Display', serif;
   color: #242424;
 }
-.title-text :hover{
+
+.title-text :hover {
   font-family: 'Playfair Display', serif;
   color: #000000;
 }
@@ -827,7 +831,8 @@ General style
   display: none;
 }
 
-.cc_container .cc_logo:hover, .cc_container .cc_logo:active {
+.cc_container .cc_logo:hover,
+.cc_container .cc_logo:active {
   opacity: 1;
 }
 
@@ -840,6 +845,7 @@ General style
     font-size: 0.8em;
   }
 }
+
 @media screen and (min-width: 768px) {
   .cc_container .cc_btn {
     font-size: 1em;
@@ -850,16 +856,21 @@ General style
     line-height: 1em;
   }
 }
+
 @media screen and (min-width: 992px) {
   .cc_container .cc_message {
     font-size: 1em;
   }
 }
+
 @media print {
-  .cc_banner-wrapper, .cc_container {
+
+  .cc_banner-wrapper,
+  .cc_container {
     display: none;
   }
 }
+
 .cc_container {
   position: fixed;
   left: 0;
@@ -893,11 +904,13 @@ General style
     bottom: 26px;
   }
 }
+
 @media screen and (min-width: 768px) {
   .cc_container .cc_message {
     font-size: 1em;
   }
 }
+
 .cc_container {
   background: #fff;
   color: #999;
@@ -907,24 +920,28 @@ General style
   border: 1px solid #ccc;
 }
 
-.cc_container .cc_btn, .cc_container .cc_btn:visited {
+.cc_container .cc_btn,
+.cc_container .cc_btn:visited {
   color: #fff;
   background-color: #00afea;
-  transition: background 200ms ease-in-out,color 200ms ease-in-out,box-shadow 200ms ease-in-out;
+  transition: background 200ms ease-in-out, color 200ms ease-in-out, box-shadow 200ms ease-in-out;
 }
 
-.cc_container .cc_btn:hover, .cc_container .cc_btn:active {
+.cc_container .cc_btn:hover,
+.cc_container .cc_btn:active {
   background-color: #38cdff;
   color: #fff;
 }
 
-.cc_container a, .cc_container a:visited {
+.cc_container a,
+.cc_container a:visited {
   text-decoration: none;
   color: #00afea;
   transition: 200ms color;
 }
 
-.cc_container a:hover, .cc_container a:active {
+.cc_container a:hover,
+.cc_container a:active {
   color: #38cdff;
 }
 
@@ -933,11 +950,13 @@ General style
     opacity: 0;
     transform: translateY(-20px);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0);
   }
 }
+
 .cc_container {
   animation: fadeInTop .6s both;
 }
