@@ -106,55 +106,72 @@
 
 
     <section class="fdb-block py-0">
-        <div class="container py-5 my-5"  style="background-image: url(./imgs/shapes/8.svg)">
-          <div class="row py-5">
-            <div class="col py-5">
-              <div class="fdb-box fdb-touch">
-                <div class="row text-center justify-content-center">
-                    <div class="col-8">
-                        <h1 class="title-text">What are you waiting for?</h1>
-                        <h2 class="lead">Let's build something great together!</h2>
+        <div class="container py-5 my-5" style="background-image: url(./imgs/shapes/8.svg)">
+            <div class="row py-5">
+                <div class="col py-5">
+                    <div class="fdb-box fdb-touch">
+                        <div class="row text-center justify-content-center">
+                            <div class="col-8">
+                                <h1 class="title-text">What are you waiting for?</h1>
+                                <h2 class="lead">Let's build something great together!</h2>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center pt-4">
+                            <div class="col-12 col-md-8">
+
+
+
+
+                                <form action="success.html" name="contact" method="POST" data-netlify="true">
+                                    <div class="row">
+                                        <div class="col-12 col-md">
+                                            <input type="text" name="name" placeholder="Vad heter du?"
+                                                class="form-control" required>
+                                            <label for="contact-name" class=""></label>
+                                        </div>
+                                        <div class="col-12 col-md mt-4 mt-md-0">
+                                            <input input type="email" name="email" placeholder="E-post"
+                                                class="form-control" required>
+                                            <label for="contact-email" class=""></label>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-4">
+                                        <label class="col" for="department">Hur kan vi hjälpa dig idag?
+                                            <select name="department" id="department" class="form-control" required="">
+                                                <option value="Brand Identity"></option>
+                                                <option value="Brand Identity">Logga</option>
+                                                <option value="Webbdesign">Webbdesign</option>
+                                                <option value="Webbutveckling">Webbutveckling</option>
+                                                <option value="Seo optimering">Seo Optimering</option>
+
+                                            </select>
+                                        </label>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col">
+
+                                            <textarea class="form-control md-textarea" name="message" rows="3"
+                                                placeholder="Berätta lite om ditt project... " required=""></textarea>
+                                            <label for="contact-message"></label>
+
+                                        </div>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col text-center">
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                        </div>
+                                    </div>
+                                </form>
+
+
+
+                            </div>
+                        </div>
                     </div>
                 </div>
-      
-                <div class="row justify-content-center pt-4">
-                  <div class="col-12 col-md-8">
-                    <form>
-                        <div class="row">
-                          <div class="col-12 col-md">
-                            <input type="text" class="form-control" placeholder="Vad heter du?">
-                          </div>
-                          <div class="col-12 col-md mt-4 mt-md-0">
-                            <input type="text" class="form-control" placeholder="E-post">
-                          </div>
-                        </div>
-        
-                        <div class="row mt-4">
-                          <label class="col" for="department">Hur kan vi hjälpa dig idag?
-                              <select name="department" id="department" class="form-control">
-                                  <option value="Brand Identity"></option>
-                                  <option value="Brand Identity">Logga</option>
-                                  <option value="Webbdesign">Webbdesign</option>
-                                  <option value="Webbutveckling">Webbutveckling</option>
-                              </select>
-                          </label>
-                        </div>
-                        <div class="row mt-4">
-                          <div class="col">
-                            <textarea class="form-control" name="message" rows="3" placeholder="Pleasae tell us a bit about what you're looking on collaborate on. Ex: scope, budget, timeline..."></textarea>
-                          </div>
-                        </div>
-                        <div class="row mt-4">
-                          <div class="col text-center">
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                          </div>
-                        </div>
-                      </form>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
         </div>
 
 
@@ -164,36 +181,36 @@
                     <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-sm-left">
                         <h3><strong class="title-text-2">ITnordik</strong></h3>
                         <hr class="lighten-5 accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-    
+
                         <div class="nav flex-column">
                             <a class="nav-link" href="index.html">Hem</a>
                             <a class="nav-link" href="#about">Om oss</a>
                             <a class="nav-link" href="kundcase.html">Kundcase</a>
                             <a class="nav-link" href="webbproduktion.html">Vad vi gör</a>
                             <a class="nav-link" href="kontakt.html">Kontakt</a>
-    
+
                         </div>
                     </div>
-    
+
                     <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-5 mt-sm-0 text-sm-left">
                         <h3><strong>Utveckling</strong></h3>
                         <hr class="lighten-5 accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-    
+
                         <div class="nav flex-column">
                             <a class="nav-link" href="webbproduktion.html#webbstrategi">Webbstrategi</a>
                             <a class="nav-link" href="webbproduktion.html#utveckling">Utveckling</a>
                             <a class="nav-link" href="webbproduktion.html#seo">SEO-analys</a>
                         </div>
                     </div>
-    
+
                     <div class="col-12 col-md-4 col-lg-3 text-md-left mt-5 mt-md-0">
                         <h3><strong>Om Oss</strong></h3>
                         <hr class="lighten-5 accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-    
+
                         <p>ITnordik hjälper nystartade och mindre företag att växa. Vi hjälper till med moderna webb &
                             design lösningnar med fokus på tillväxt.</p>
                     </div>
-    
+
                     <div class="col-12 col-lg-2 ml-auto text-lg-left mt-4 mt-lg-0">
                         <h3><strong>Följ oss på </strong></h3>
                         <p class="lead">
@@ -204,7 +221,7 @@
                         </p>
                     </div>
                 </div>
-    
+
                 <div class="row mt-3">
                     <div class="col text-center">
                         © 2020 ITnordik:All Rights Reserved
@@ -212,74 +229,75 @@
                 </div>
             </div>
         </footer>
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
 
 
-    <!-- EndjQuery -->
-    <!-- Anime JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <!-- End Anime JS -->
-    <!-- Testimonials -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js" crossorigin="anonymous">
-    </script>
-    <!-- End Testimonials -->
+        <!-- EndjQuery -->
+        <!-- Anime JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        <!-- End Anime JS -->
+        <!-- Testimonials -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js"
+            crossorigin="anonymous">
+        </script>
+        <!-- End Testimonials -->
 
-    <!-- Bootstrap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <!-- End Bootstrap -->
+        <!-- Bootstrap -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+        <!-- End Bootstrap -->
 
-    <!-- Particles -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <!-- end Particles -->
+        <!-- Particles -->
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <!-- end Particles -->
 
-    <!-- Aos -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- End Aos -->
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js">
-    </script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js">
-    </script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/3.2.1/js/froala_editor.min.js"> </script>
-    <script>
-        AOS.init({
-            duration: 1200,
-        });
-    </script>
-    <script type="text/javascript" src="static/js/main.js"></script>
-    <script>
-        var navMenu = $('nav');
-        var scrollTop = 0;
+        <!-- Aos -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!-- End Aos -->
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js">
+        </script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js">
+        </script>
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/3.2.1/js/froala_editor.min.js"> </script>
+        <script>
+            AOS.init({
+                duration: 1200,
+            });
+        </script>
+        <script type="text/javascript" src="static/js/main.js"></script>
+        <script>
+            var navMenu = $('nav');
+            var scrollTop = 0;
 
-        $(window).scroll(function (event) {
+            $(window).scroll(function (event) {
 
-            if ($(window).scrollTop() > 400) {
+                if ($(window).scrollTop() > 400) {
 
-                var newScrollTop = $(this).scrollTop();
+                    var newScrollTop = $(this).scrollTop();
 
-                if (scrollTop < newScrollTop) {
-                    navMenu.fadeOut(200);
-                } else {
-                    navMenu.fadeIn(200)
+                    if (scrollTop < newScrollTop) {
+                        navMenu.fadeOut(200);
+                    } else {
+                        navMenu.fadeIn(200)
+                    }
+
+                    scrollTop = newScrollTop;
+
                 }
 
-                scrollTop = newScrollTop;
-
-            }
-
-        });
-    </script>
+            });
+        </script>
 </body>
 
 </html>
