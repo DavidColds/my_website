@@ -9,7 +9,48 @@
 
 <url>
   <loc>https://www.itnordik.se/</loc>
-  <lastmod>2020-08-18T08:50:20+00:00</lastmod>
+  <lastmod>2020-09-15T21:01:09+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.itnordik.se/kundcase.html</loc>
+  <lastmod>2020-09-15T21:01:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.itnordik.se/webbproduktion.html</loc>
+  <lastmod>2020-09-15T21:01:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.itnordik.se/kontakt.html</loc>
+  <lastmod>2020-09-15T21:01:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.itnordik.se/almabygg.html</loc>
+  <lastmod>2020-09-15T21:01:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.itnordik.se/mna.html</loc>
+  <lastmod>2020-09-15T21:01:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.itnordik.se/index.html</loc>
+  <lastmod>2020-09-15T21:01:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.itnordik.se/lepetitsalon.html</loc>
+  <lastmod>2020-09-15T21:01:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.itnordik.se/pisanoarts.html</loc>
+  <lastmod>2020-09-15T21:01:09+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 
