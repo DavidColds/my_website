@@ -42,7 +42,7 @@ Navbar
 ============================================================= 
 */
 .navbar {
-  background-color: #eeeeeec7;
+  background-color: #ffffff;
 }
 
 .navbar .navbar-brand img {
@@ -265,7 +265,13 @@ tjanster
   font-weight: 600;
 }
 
-.display-2 {
+.display-3 {
+  font-family: 'Playfair Display', serif;
+
+}
+
+.title-text-22 {
+  font-size: 100px;
   font-family: 'Playfair Display', serif;
 
 }
